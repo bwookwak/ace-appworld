@@ -96,7 +96,7 @@ python-dotenv = "^1.0.1"
 uvicorn = "^0.27.1"
 cryptography = "^44.0.1"
 python-multipart = "^0.0.9"
-httpx = "^0.27.0"
+httpx = ">=0.27.0"
 libcst = "^1.2.0"
 uvloop = {version = "^0.21.0", markers = "sys_platform == 'linux' or sys_platform == 'darwin'"}
 winloop = {version = "^0.1.2", markers = "sys_platform == 'win32'"}
