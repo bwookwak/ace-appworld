@@ -42,6 +42,7 @@ class Agent(FromDict):
         logger_config = logger_config or {}
         logger_config["cost_tracker"] = self.cost_tracker
         self.logger = Logger(**logger_config)
+        self.language_model.attach_logger(self.logger)
         self.initial_messages_idx = None
         self.previous_code_idx = None
         self.previous_error_idx = None

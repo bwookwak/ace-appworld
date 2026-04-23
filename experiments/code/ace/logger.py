@@ -1,4 +1,5 @@
 import os
+import time
 from typing import Any
 
 from rich.console import Console
@@ -7,8 +8,21 @@ from rich.syntax import Syntax
 from rich.text import Text
 
 from appworld import AppWorld
+from appworld.common.path_store import path_store
 from appworld.common.utils import Timer, maybe_create_parent_directory
 from appworld_experiments.code.ace.cost_tracker import CostTracker
+
+
+ROLES = {
+    "user":        {"emoji": "🧑", "style": "magenta"},
+    "agent":       {"emoji": "🤖", "style": "green"},
+    "environment": {"emoji": "🌍", "style": "cyan"},
+    "reflector":   {"emoji": "🪞", "style": "yellow"},
+    "curator":     {"emoji": "🗂️ ", "style": "blue"},
+    "checkpoint":  {"emoji": "💾", "style": "bright_white"},
+    "llm_failure": {"emoji": "🚨", "style": "red"},
+    "system":      {"emoji": "⚙️ ", "style": "dim"},
+}
 
 
 class Logger:
@@ -19,7 +33,9 @@ class Logger:
         color: bool = True,
     ):
         self.terminal_console = Console(no_color=not color)
-        self.file_console = None
+        self.file_console: Console | None = None
+        self._global_log_file = None
+        self._global_console: Console | None = None
         self.num_tasks: int | None = None
         self.num_tasks_completed: int | None = None
         self.color = color
@@ -27,6 +43,8 @@ class Logger:
         self.timer = Timer(start=False)
         self.cost_tracker = cost_tracker
         self.process_number: str | None = None
+        self.experiment_name: str | None = None
+        self._step_start_time: float | None = None
 
     def initialize(
         self,
@@ -38,6 +56,7 @@ class Logger:
     ):
         self.num_tasks = num_tasks
         self.num_tasks_completed = 0
+        self.experiment_name = experiment_name
         self.timer.start()
         extra_experiment_info = extra_experiment_info or {}
         if num_processes > 1:
@@ -55,10 +74,24 @@ class Logger:
         panel = Panel(panel_content, title="[bold]Experiment Information[/bold]", expand=True)
         self.terminal_console.print(panel)
 
+        if experiment_name:
+            global_log_path = os.path.join(
+                path_store.experiment_outputs, experiment_name, "pipeline.log"
+            )
+            maybe_create_parent_directory(global_log_path)
+            suffix = f".p{process_index}" if num_processes > 1 else ""
+            global_log_path = global_log_path + suffix
+            self._global_log_file = open(global_log_path, "a", encoding="utf-8")
+            self._global_console = Console(file=self._global_log_file, no_color=True)
+            self._global_console.print(panel)
+
     def start_task(self, world: AppWorld):
         task = world.task
         if self.file_console:
-            self.file_console.file.close()
+            try:
+                self.file_console.file.close()
+            except Exception:
+                pass
         file_path = os.path.join(world.output_logs_directory, "loggger.log")
         maybe_create_parent_directory(file_path)
         log_file = open(file_path, "w", encoding="utf-8")
@@ -98,24 +131,23 @@ class Logger:
         summary += f"💵 Overall cost: [yellow]${self.cost_tracker.overall_cost:.2f}[/]"
         self._print(Panel(summary, title="⏳ Progress", expand=True))
         if self.file_console:
-            self.file_console.file.close()
+            try:
+                self.file_console.file.close()
+            except Exception:
+                pass
+            self.file_console = None
 
     def show_message(self, role: str, message: str, step_number: int | None = None) -> None:
         if not self.verbose:
             return
-        roles = {
-            "user": {"emoji": "🧑", "style": "magenta"},
-            "agent": {"emoji": "🤖", "style": "green"},
-            "environment": {"emoji": "🌍", "style": "cyan"},
-        }
-        emoji = roles.get(role, {}).get("emoji", "")
-        style = roles.get(role, {}).get("style", "white")
+        if role not in ROLES:
+            raise ValueError(f"Invalid role: {role}. Valid roles are: {list(ROLES.keys())}")
+        emoji = ROLES[role]["emoji"]
+        style = ROLES[role]["style"]
         if role == "user" or not step_number:
             title = f"[{style}]{emoji} {role}[/]"
         else:
             title = f"[{style}]{emoji} {role} (step #{step_number})[/]"
-        if role not in roles:
-            raise ValueError(f"Invalid role: {role}. Valid roles are: {list(roles.keys())}")
         if role == "agent":
             content = Syntax(message, "markdown", theme="monokai", line_numbers=False)
         else:
@@ -130,7 +162,142 @@ class Logger:
         )
         self._print(panel)
 
+    def log_step_start(self, step_number: int, max_steps: int) -> None:
+        self._step_start_time = time.time()
+        msg = f"─── Step {step_number}/{max_steps} started ───"
+        self._print_system(msg)
+
+    def log_step_end(self, step_number: int, total_cost: float) -> None:
+        if self._step_start_time is None:
+            duration = 0.0
+        else:
+            duration = time.time() - self._step_start_time
+        msg = (
+            f"─── Step {step_number} done in {duration:.1f}s "
+            f"| total cost: ${total_cost:.4f} ───"
+        )
+        self._print_system(msg)
+
+    def log_llm_request_start(
+        self,
+        model: str,
+        attempt: int,
+        max_attempts: int,
+    ) -> None:
+        """One-line log emitted right before each LLM HTTP request.
+
+        Lets the user see we are *waiting* on the model (vs. frozen) and
+        correlate hangs/retries to a specific attempt number.
+        """
+        msg = f"LLM -> {model} | attempt {attempt}/{max_attempts}"
+        self._print_system(msg)
+
+    def log_llm_call(
+        self,
+        model: str,
+        attempt: int,
+        duration_s: float,
+        success: bool,
+        error: str | None = None,
+    ) -> None:
+        if success:
+            status = "✓"
+            extra = ""
+        else:
+            status = f"✗ (attempt {attempt})"
+            extra = f" | error={error[:120] if error else 'unknown'}"
+        msg = f"LLM {status} | model={model} | {duration_s:.1f}s{extra}"
+        self._print_system(msg)
+
+    def log_reflector_summary(
+        self, task_id: str, duration_s: float, preview: str
+    ) -> None:
+        if not self.verbose:
+            return
+        snippet = (preview[:600] + "...") if len(preview) > 600 else preview
+        if not snippet.strip():
+            snippet = "[empty reflection]"
+        title = f"🪞 Reflector | task={task_id} | {duration_s:.1f}s"
+        panel = Panel(
+            Text(snippet),
+            title=title,
+            title_align="left",
+            border_style=ROLES["reflector"]["style"],
+            expand=True,
+            padding=(1, 2),
+        )
+        self._print(panel)
+
+    def log_curator_summary(
+        self,
+        task_id: str,
+        duration_s: float,
+        ops_attempted: int,
+        ops_applied: int,
+        added_bullets: list[dict],
+    ) -> None:
+        if not self.verbose:
+            return
+        lines = [f"Ops: {ops_applied}/{ops_attempted} applied | {duration_s:.1f}s"]
+        if not added_bullets:
+            lines.append("  (no bullets added)")
+        for b in added_bullets[:30]:
+            content = str(b.get("content", "")).strip().replace("\n", " ")
+            section = b.get("section", "?")
+            if len(content) > 100:
+                content = content[:100] + "..."
+            lines.append(f"  + [{section}] {content}")
+        if len(added_bullets) > 30:
+            lines.append(f"  ... and {len(added_bullets) - 30} more")
+        title = f"🗂️  Curator | task={task_id}"
+        panel = Panel(
+            Text("\n".join(lines)),
+            title=title,
+            title_align="left",
+            border_style=ROLES["curator"]["style"],
+            expand=True,
+            padding=(1, 2),
+        )
+        self._print(panel)
+
+    def log_checkpoint(self, snapshot_path: str, global_task_index: int) -> None:
+        msg = f"💾 Checkpoint saved at task #{global_task_index}: {snapshot_path}"
+        self._print_system(msg, role="checkpoint")
+
+    def log_llm_failure(self, model: str, attempts: int, error: str) -> None:
+        snippet = (error[:300] + "...") if len(error) > 300 else error
+        title = "🚨 LLM FAILURE"
+        body = (
+            f"model={model}\n"
+            f"attempts={attempts}\n"
+            f"last_error={snippet}"
+        )
+        panel = Panel(
+            Text(body),
+            title=title,
+            title_align="left",
+            border_style=ROLES["llm_failure"]["style"],
+            expand=True,
+            padding=(1, 2),
+        )
+        self._print(panel)
+
+    def _print_system(self, message: str, role: str = "system") -> None:
+        emoji = ROLES.get(role, ROLES["system"])["emoji"]
+        style = ROLES.get(role, ROLES["system"])["style"]
+        text = Text.from_markup(f"[{style}]{emoji} {message}[/]")
+        self._print(text)
+
     def _print(self, *args: Any, **kwargs: Any):
         self.terminal_console.print(*args, **kwargs)
         if self.file_console:
-            self.file_console.print(*args, **kwargs)
+            try:
+                self.file_console.print(*args, **kwargs)
+            except Exception:
+                pass
+        if self._global_console:
+            try:
+                self._global_console.print(*args, **kwargs)
+                self._global_console.file.flush()
+            except Exception:
+                pass

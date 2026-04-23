@@ -69,12 +69,14 @@ class SimplifiedReActAgent(Agent):
             )
             self.messages.append({"role": "user", "content": last_execution_output_content})
         messages = self.trimmed_messages
+        self.logger.log_step_start(self.step_number, self.max_steps)
         output = self.language_model.generate(messages=messages)
         code, fixed_output_content = self.extract_code_and_fix_content(output["content"])
         self.messages.append({"role": "assistant", "content": fixed_output_content + "\n\n"})
         self.logger.show_message(
             role="agent", message=fixed_output_content, step_number=self.step_number
         )
+        self.logger.log_step_end(self.step_number, self.cost_tracker.overall_cost)
         return [ExecutionIO(content=code)], output["cost"], None
 
     def extract_code_and_fix_content(self, text: str) -> tuple[str, str]:

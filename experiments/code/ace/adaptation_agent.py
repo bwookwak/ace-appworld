@@ -1,11 +1,13 @@
+import json
 import os
 from dataclasses import dataclass, field
+from datetime import datetime
 from typing import Any
 
 from appworld import AppWorld
 from appworld.common.constants import DEFAULT_EXPERIMENT_NAME
 from appworld.common.random import set_random_seed
-from appworld.common.utils import FromDict, chunk_and_return
+from appworld.common.utils import FromDict, chunk_and_return, maybe_create_parent_directory
 from appworld_experiments.code.ace.cost_tracker import CostTracker
 from appworld_experiments.code.ace.lite_llm_generator import LiteLLMGenerator
 from appworld_experiments.code.ace.logger import Logger
@@ -31,6 +33,8 @@ class StarAgent(FromDict):
         log_lm_calls: bool = False,
         use_reflector: bool = True,
         use_gt_code: bool = False,
+        checkpoint_every_n_tasks: int = 30,
+        global_task_offset: int = 0,
     ):
         self.generator_model = LiteLLMGenerator(**generator_model_config)
         self.reflector_model = LiteLLMGenerator(**reflector_model_config)
@@ -49,6 +53,10 @@ class StarAgent(FromDict):
         logger_config = logger_config or {}
         logger_config["cost_tracker"] = self.cost_tracker
         self.logger = Logger(**logger_config)
+        # Forward Logger to LLM generators for retry/failure visibility
+        self.generator_model.attach_logger(self.logger)
+        self.reflector_model.attach_logger(self.logger)
+        self.curator_model.attach_logger(self.logger)
         self.initial_messages_idx = None
         self.previous_code_idx = None
         self.previous_error_idx = None
@@ -56,10 +64,13 @@ class StarAgent(FromDict):
         self.initial_code_idx = None
         self.last_execution_error = None
         self.playbook = ''
-        self.current_task_index = 0  # Global variable to track current task index
+        self.current_task_index = 0  # local index within this run (0-based)
         self.trained_playbook_file_path = None
         self.num_retries = 5
         self.use_gt_code = use_gt_code
+        self.checkpoint_every_n_tasks = max(1, int(checkpoint_every_n_tasks))
+        self.global_task_offset = max(0, int(global_task_offset))
+        self._last_completed_task_id: str | None = None
 
     def initialize(self, world: AppWorld):
         self.world = world
@@ -94,9 +105,9 @@ class StarAgent(FromDict):
             ) as world:
                 execution_outputs: list[ExecutionIO] = []
                 self.initialize(world)
-                try: 
+                try:
                     gt_code = world.task.ground_truth.load(task_id, mode="full").compiled_solution_code
-                except:
+                except Exception:
                     raise ValueError(f"GT code not found for task: {task_id}")
                 print("---Max steps---: ", self.max_steps)
                 print("GT Code: \n", gt_code)
@@ -120,12 +131,11 @@ class StarAgent(FromDict):
                             for execution_input in execution_inputs
                         ]
 
-                        # Show execution results to user via logger
                         for i, output in enumerate(execution_outputs):
-                            if output.content.strip():  # Only show non-empty outputs
+                            if output.content.strip():
                                 self.logger.show_message(
-                                    role="environment", 
-                                    message=output.content, 
+                                    role="environment",
+                                    message=output.content,
                                     step_number=self.step_number
                                 )
 
@@ -134,7 +144,7 @@ class StarAgent(FromDict):
                     if world.task_completed() or self.cost_tracker.exceeded():
                         self.curator_call()
                         test_tracker, self.test_report = evaluate_task(task_id, experiment_name)
-                        if len(test_tracker.failures)>0:
+                        if len(test_tracker.failures) > 0:
                             reasoning_text = self.reflector_call()
                         else:
                             task_success = True
@@ -143,8 +153,8 @@ class StarAgent(FromDict):
                 if task_success:
                     break
 
-        # Save playbook every 30 tasks
-        if (self.current_task_index + 1) % 30 == 0:
+        self._last_completed_task_id = task_id
+        if (self.current_task_index + 1) % self.checkpoint_every_n_tasks == 0:
             self.save_playbook_snapshot()
 
         self.logger.complete_task()
@@ -178,13 +188,12 @@ class StarAgent(FromDict):
                         )
                         for execution_input in execution_inputs
                     ]
-                
-                    # Show execution results to user via logger
+
                     for i, output in enumerate(execution_outputs):
-                        if output.content.strip():  # Only show non-empty outputs
+                        if output.content.strip():
                             self.logger.show_message(
-                                role="environment", 
-                                message=output.content, 
+                                role="environment",
+                                message=output.content,
                                 step_number=self.step_number
                             )
 
@@ -194,11 +203,11 @@ class StarAgent(FromDict):
                     test_tracker, self.test_report = evaluate_task(task_id, experiment_name)
                     self.curator_call()
                     break
-                        
-        # Save playbook every 30 tasks
-        if (self.current_task_index + 1) % 30 == 0:
+
+        self._last_completed_task_id = task_id
+        if (self.current_task_index + 1) % self.checkpoint_every_n_tasks == 0:
             self.save_playbook_snapshot()
-            
+
         self.logger.complete_task()
 
     def solve_task(self, task_id: str, experiment_name: str | None = None):
@@ -233,16 +242,47 @@ class StarAgent(FromDict):
     def log_cost(self) -> None:
         self.cost_tracker.save(os.path.join(self.world.output_misc_directory, "cost.txt"))
 
-    def curator_call(self, reflection: str):
+    def curator_call(self, reflection: str | None = None):
         raise NotImplementedError
 
     def save_playbook_snapshot(self):
-        """Save playbook snapshot every 30 tasks"""
-        if hasattr(self, 'playbook') and self.playbook:
-            if self.trained_playbook_file_path:
-                snapshot_file_path = self.trained_playbook_file_path.split('.txt')[0] + str(self.current_task_index + 1) + '.txt'
-            else:
-                raise ValueError("trained_playbook_file_path is not set")
-            with open(snapshot_file_path, "w") as file:
-                file.write(self.playbook)
-            print(f"Saved playbook snapshot at task {self.current_task_index + 1}: {snapshot_file_path}")
+        """Save playbook snapshot + checkpoint_state.json (for resume)."""
+        if not (hasattr(self, 'playbook') and self.playbook):
+            return
+        if not self.trained_playbook_file_path:
+            raise ValueError("trained_playbook_file_path is not set")
+
+        global_idx = self.global_task_offset + self.current_task_index + 1
+        base = self.trained_playbook_file_path
+        if base.endswith(".txt"):
+            base_no_ext = base[:-4]
+        else:
+            base_no_ext = base
+        snapshot_file_path = f"{base_no_ext}_snapshot_{global_idx}.txt"
+        state_file_path = f"{base_no_ext}_checkpoint_state.json"
+
+        maybe_create_parent_directory(snapshot_file_path)
+        with open(snapshot_file_path, "w", encoding="utf-8") as f:
+            f.write(self.playbook)
+
+        state = {
+            "global_task_index": global_idx,
+            "last_completed_task_id": self._last_completed_task_id,
+            "playbook_snapshot_path": snapshot_file_path,
+            "trained_playbook_file_path": self.trained_playbook_file_path,
+            "checkpoint_every_n_tasks": self.checkpoint_every_n_tasks,
+            "timestamp": datetime.utcnow().isoformat(),
+        }
+        with open(state_file_path, "w", encoding="utf-8") as f:
+            json.dump(state, f, indent=2)
+
+        if hasattr(self, "logger") and self.logger is not None:
+            try:
+                self.logger.log_checkpoint(
+                    snapshot_path=snapshot_file_path,
+                    global_task_index=global_idx,
+                )
+            except Exception:
+                print(f"Saved playbook snapshot at task {global_idx}: {snapshot_file_path}")
+        else:
+            print(f"Saved playbook snapshot at task {global_idx}: {snapshot_file_path}")

@@ -2,12 +2,14 @@ import copy
 import json
 import os
 import re
+import time
+from datetime import datetime
 from typing import Any
 
 from jinja2 import Template
 
 from appworld import AppWorld
-from appworld.common.utils import read_file
+from appworld.common.utils import maybe_create_parent_directory, read_file
 from appworld_experiments.code.ace.adaptation_agent import StarAgent, ExecutionIO
 from .playbook import apply_curator_operations, extract_json_from_text, get_next_global_id
 
@@ -99,12 +101,14 @@ class SimplifiedReActStarAgent(StarAgent):
             self.messages.append({"role": "user", "content": last_execution_output_content})
         
         messages = self.trimmed_messages
+        self.logger.log_step_start(self.step_number, self.max_steps)
         output = self.generator_model.generate(messages=messages)
         code, fixed_output_content = self.extract_code_and_fix_content(output["content"])
         self.messages.append({"role": "assistant", "content": fixed_output_content + "\n\n"})
         self.logger.show_message(
             role="agent", message=fixed_output_content, step_number=self.step_number
         )
+        self.logger.log_step_end(self.step_number, self.cost_tracker.overall_cost)
         return [ExecutionIO(content=code)], output["cost"], None
 
     def extract_code_and_fix_content(self, text: str) -> tuple[str, str]:
@@ -247,46 +251,70 @@ class SimplifiedReActStarAgent(StarAgent):
             .replace("{{playbook}}", self.playbook or "N/A")
             .replace("{{previous_reflection}}", "N/A")
         )
-        
-        # add full conversation history
+
         conversation_history = "\n\n=== FULL CONVERSATION HISTORY ===\n"
         for i, msg in enumerate(self.trimmed_messages):
             role = msg.get("role", "unknown")
             content = msg.get("content", "")
             conversation_history += f"[{i}] {role.upper()}: {content}\n\n"
-        
+
         filled_prompt += conversation_history
 
+        t0 = time.time()
         message_ = self.reflector_model.generate(messages=[{"role": "user", "content": filled_prompt}])
-        reasoning_text = message_.get("content", "")
-        if reasoning_text != "" and reasoning_text is not None:
-            self.logger.show_message(role="user", message=reasoning_text, step_number=self.step_number)
-        else:
-            self.logger.show_message(role="user", message="[WARN] reasoning_text is empty or None", step_number=self.step_number)
+        duration = time.time() - t0
+        reasoning_text = message_.get("content", "") or ""
+
+        task_id = getattr(getattr(self, "world", None), "task_id", "?")
+        self.logger.log_reflector_summary(
+            task_id=task_id,
+            duration_s=duration,
+            preview=reasoning_text if reasoning_text.strip() else "[empty reflection]",
+        )
+        self._append_reflection_log(reasoning_text, duration)
 
         return reasoning_text
+
+    def _append_reflection_log(self, reflection: str, duration_s: float) -> None:
+        """Append the raw reflector output to reflections.jsonl alongside the playbook."""
+        if not self.trained_playbook_file_path:
+            return
+        log_dir = os.path.dirname(self.trained_playbook_file_path) or "."
+        log_path = os.path.join(log_dir, "reflections.jsonl")
+        maybe_create_parent_directory(log_path)
+        global_idx = self.global_task_offset + self.current_task_index + 1
+        entry = {
+            "task_id": getattr(getattr(self, "world", None), "task_id", None),
+            "task_index": self.current_task_index,
+            "global_task_index": global_idx,
+            "reflection": reflection,
+            "duration_s": round(duration_s, 3),
+            "timestamp": datetime.utcnow().isoformat(),
+        }
+        try:
+            with open(log_path, "a", encoding="utf-8") as f:
+                f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+        except Exception as exc:
+            print(f"[WARN] failed to append reflection log: {exc}")
     
     def curator_call(self):
         """
         Let the curator update the playbook based on the full conversation history, i.e. all messages and reflections.
         """
-        
+
         reasoning_text = None
         if self.use_reflector:
             reasoning_text = self.reflector_call()
-        # Current playbook and question context
         current_playbook = self.playbook or ""
         question_context = getattr(getattr(self, "world", None), "task", None)
         question_context = getattr(question_context, "instruction", "") if question_context else ""
 
-        # add conversation history
         conversation_history = "\n\n=== FULL CONVERSATION HISTORY ===\n"
         for i, msg in enumerate(self.trimmed_messages):
             role = msg.get("role", "unknown")
             content = msg.get("content", "")
             conversation_history += f"[{i}] {role.upper()}: {content}\n\n"
 
-        # Build curator prompt with explicit response format
         content = self.curator_prompt.format(
             initial_generated_code="See full conversation history below",
             final_generated_code="See full conversation history below",
@@ -295,18 +323,21 @@ class SimplifiedReActStarAgent(StarAgent):
             question_context=question_context,
             gt=self.world_gt_code
         )
-        
+
         content += conversation_history
 
         self.curation_messages = [{"role": "user", "content": content}]
+        t0 = time.time()
         curator_raw = self.curator_model.generate(messages=self.curation_messages)
+        curator_duration = time.time() - t0
         curator_response = curator_raw.get("content", "")
+        ops_attempted = 0
+        applied_operations: list[dict] = []
 
         # Parse JSON (must match explicit response schema: {"reasoning": str, "operations": [...]})
         operations_info = extract_json_from_text(curator_response, "operations")
 
-        try: 
-            # Strict validation
+        try:
             if not operations_info:
                 raise ValueError("Failed to extract valid JSON from curator response")
 
@@ -320,10 +351,11 @@ class SimplifiedReActStarAgent(StarAgent):
             if not isinstance(operations_info["operations"], list):
                 raise ValueError("'operations' field must be a list")
 
-            # Only ADD operations supported
+            ops_attempted = len(operations_info["operations"])
+
             allowed_sections = {
                 "strategies_and_hard_rules",
-                "apis_to_use_for_specific_information", 
+                "apis_to_use_for_specific_information",
                 "useful_code_snippets_and_templates",
                 "common_mistakes_and_correct_strategies",
                 "problem_solving_heuristics_and_workflows",
@@ -344,16 +376,15 @@ class SimplifiedReActStarAgent(StarAgent):
                 missing_fields = required_fields - set(op.keys())
                 if missing_fields:
                     raise ValueError(f"ADD operation {i} missing fields: {list(missing_fields)}")
-                # Enforce section whitelist
                 section_name = str(op.get("section", "")).strip().lower().replace(" ", "_").replace("&", "and").rstrip(":")
                 if section_name not in allowed_sections:
-                    print(f"⏭️  Skipping operation {i}: disallowed section '{op.get('section')}' (normalized: '{section_name}'). Allowed: {sorted(allowed_sections)}")
+                    print(f"Skipping operation {i}: disallowed section '{op.get('section')}' (normalized: '{section_name}'). Allowed: {sorted(allowed_sections)}")
                     continue
                 filtered_ops.append(op)
 
             operations = filtered_ops
-            print(f"✅ Curator JSON schema validated successfully: {len(operations)} operations")
-            # Apply curated updates
+            applied_operations = operations
+            print(f"Curator JSON schema validated successfully: {len(operations)} operations")
             self.playbook, self.next_global_id = apply_curator_operations(
                 self.playbook, operations, self.next_global_id
             )
@@ -375,11 +406,14 @@ class SimplifiedReActStarAgent(StarAgent):
             
             print("⏭️  Skipping curator operation and continuing training")
 
-        # Persist updated playbook
         with open(self.trained_playbook_file_path, "w") as file:
             file.write(self.playbook)
 
-        if curator_response is not None:
-            self.logger.show_message(role="user", message=curator_response, step_number=self.step_number)
-        else:
-            self.logger.show_message(role="user", message="[WARN] curator_response is None", step_number=self.step_number)
+        task_id = getattr(getattr(self, "world", None), "task_id", "?")
+        self.logger.log_curator_summary(
+            task_id=task_id,
+            duration_s=curator_duration,
+            ops_attempted=ops_attempted,
+            ops_applied=len(applied_operations),
+            added_bullets=applied_operations,
+        )

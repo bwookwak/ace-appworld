@@ -1,0 +1,8 @@
+{
+  "global_task_index": 400,
+  "last_completed_task_id": "ce359b5_1",
+  "playbook_snapshot_path": "/home/bwoo/workspace/ace-appworld/experiments/runs/ACE_offline_5epoch/playbooks/trained_playbook_snapshot_400.txt",
+  "trained_playbook_file_path": "/home/bwoo/workspace/ace-appworld/experiments/runs/ACE_offline_5epoch/playbooks/trained_playbook.txt",
+  "checkpoint_every_n_tasks": 50,
+  "timestamp": "2026-04-23T16:32:54.166128"
+}
