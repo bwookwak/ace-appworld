@@ -1,0 +1,111 @@
+{
+  "per_task": {
+    "50e1ac9_1": {
+      "success": 1,
+      "step_count": 8,
+      "cost_usd": 0.15,
+      "cited_count": 1,
+      "judged_count": 1,
+      "cited_insights": [
+        "shr-00005"
+      ],
+      "judged_insights": [
+        "shr-00005"
+      ],
+      "num_passed": 5,
+      "num_failed": 0
+    },
+    "50e1ac9_2": {
+      "success": 1,
+      "step_count": 15,
+      "cost_usd": 0.41,
+      "cited_count": 2,
+      "judged_count": 2,
+      "cited_insights": [
+        "shr-00005",
+        "api-00004"
+      ],
+      "judged_insights": [
+        "shr-00005",
+        "api-00004"
+      ],
+      "num_passed": 5,
+      "num_failed": 0
+    },
+    "50e1ac9_3": {
+      "success": 0,
+      "step_count": 22,
+      "cost_usd": 0.47,
+      "cited_count": 1,
+      "judged_count": 2,
+      "cited_insights": [
+        "shr-00006"
+      ],
+      "judged_insights": [
+        "shr-00006",
+        "misc-00008"
+      ],
+      "num_passed": 1,
+      "num_failed": 4
+    },
+    "fac291d_1": {
+      "success": 1,
+      "step_count": 11,
+      "cost_usd": 0.21,
+      "cited_count": 1,
+      "judged_count": 1,
+      "cited_insights": [
+        "misc-00008"
+      ],
+      "judged_insights": [
+        "misc-00008"
+      ],
+      "num_passed": 3,
+      "num_failed": 0
+    },
+    "fac291d_2": {
+      "success": 0,
+      "step_count": 33,
+      "cost_usd": 0.82,
+      "cited_count": 1,
+      "judged_count": 0,
+      "cited_insights": [
+        "shr-00005"
+      ],
+      "judged_insights": [],
+      "num_passed": 0,
+      "num_failed": 5
+    }
+  },
+  "aggregate": {
+    "n_tasks": 5,
+    "n_ran": 5,
+    "n_success": 3,
+    "success_rate": 0.6,
+    "total_steps": 89,
+    "mean_steps": 17.8,
+    "total_cost_usd": 2.06
+  },
+  "config": {
+    "memory_path": "memory.json",
+    "tasks_dataset": "dev",
+    "sample_size": 5,
+    "resolved_task_ids": [
+      "50e1ac9_1",
+      "50e1ac9_2",
+      "50e1ac9_3",
+      "fac291d_1",
+      "fac291d_2"
+    ],
+    "reference_detection": "both",
+    "judge_model": "gpt-4o-mini",
+    "judge_provider": "openai",
+    "judge_sample_rate": 1.0,
+    "experiment_name": "memutil_dry_run_stage2",
+    "seed": 100,
+    "_note": "SNAPSHOT DEMO: synthetic"
+  },
+  "config_hash": "SNAPSHOT_DEMO_stage2",
+  "experiment_name": "memutil_dry_run_stage2",
+  "created_at": "2026-04-23T17:14:05.753091Z"
+}

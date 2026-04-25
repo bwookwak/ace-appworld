@@ -1,0 +1,1943 @@
+{
+  "insights": [
+    {
+      "id": "shr-00001",
+      "text": "Make sure to end code blocks with ``` followed by a newline(\\n).",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 15,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00005",
+      "text": "Always look at API specifications (using apis.api_docs.show_api_doc) before calling an API.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 19,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00006",
+      "text": "Write small chunks of code and only one chunk of code in every step. Make sure everything is working correctly before making any irreversible change.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 27,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00012",
+      "text": "When searching for contacts with common names (like Christopher), verify you have the correct contact by checking additional fields like phone number or relationships, especially if multiple matches exist.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 33,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00013",
+      "text": "When fetching data for many items (like songs in albums), optimize by checking if bulk APIs exist or if parent objects (like albums) already contain the needed information (e.g., play_count). Fetch all IDs first, then retrieve details efficiently, possibly in batches if supported.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 55,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00015",
+      "text": "When performing batch updates on user-specific data (e.g., ratings, likes), first check the current state of each item (reviewed/unreviewed, existing rating) using APIs like `show_song_privates` and `show_song_reviews`. Then conditionally apply updates: create new records for unreviewed items, update existing records if they don't meet the target condition (e.g., rating < 5). This avoids redundant operations and ensures correctness.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 92,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00017",
+      "text": "For batch rating updates on songs: (1) Fetch both library songs and liked songs to determine which songs are not liked; (2) Use show_song_reviews with user_email filter to check existing ratings; (3) Use show_song_privates to check reviewed status; (4) Conditionally apply updates: create new reviews for unreviewed songs, update existing reviews if rating > 1; (5) Verify final state by fetching updated data to ensure all target songs have the required rating.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 100,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00019",
+      "text": "When dealing with similar-sounding APIs (e.g., review_song vs update_song_review), check each API's specification individually. Do not assume they share the same parameter requirements; different APIs may have different required parameters even for similar operations.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 47,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00022",
+      "text": "When parsing structured content with repeating patterns (e.g., notes with movie entries each having title, director, genre lines separated by blank lines), first examine the raw format to understand the exact pattern. Then implement parsing that matches the observed structure: either iterate lines with proper state tracking or split by delimiter (e.g., double newlines) to process each block separately.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 73,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00029",
+      "text": "For tasks involving finding 'most frequent' items from API data (e.g., most recommended artist): authenticate properly, use pagination to collect all items, extract relevant fields, count occurrences using dictionaries or collections, track the maximum count during iteration, check for ties, and return the result. Always verify completeness by checking page counts and edge cases.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 68,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00035",
+      "text": "For tasks finding 'newest' or 'most recent' items based on dates across multiple collections: authenticate properly, collect items from all specified sources using pagination, fetch necessary date fields (e.g., release_date), track maximum date during iteration, and verify by examining top candidates to ensure correctness and handle ties.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 62,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00041",
+      "text": "For tasks involving payment requests to coworkers based on a note: (1) parse the note entries, (2) filter contacts by relationship='coworker' to get authoritative coworker list, (3) match each parsed name against filtered coworkers to ensure they are coworkers, (4) check Venmo transactions for payments from those coworkers (consider date range and description), (5) request payments only from coworkers who haven't paid. This ensures payments are only requested from actual coworkers.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 97,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00043",
+      "text": "When a note references an event that occurred 'yesterday' but was created today, prioritize the note content over creation date. If the note contains expense details matching the event description, use it regardless of creation date. Avoid wasting time searching for notes with exact creation dates matching the event date.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 58,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00048",
+      "text": "For Venmo tasks involving specific relationship groups (like roommates, coworkers, friends): (1) Use Phone's search_contacts with relationship parameter to get authoritative contact list; (2) Filter Venmo transactions by date using min_created_at (and optionally max_created_at) parameters; (3) Paginate through all transaction results; (4) For each transaction, check if sender or receiver email matches any contact from the filtered list; (5) Sum amounts for both directions when task specifies 'sent or received'. This ensures accurate identification and comprehensive calculation.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 111,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00049",
+      "text": "When parsing structured content with repeating patterns separated by clear delimiters (e.g., double newlines in notes): (1) Examine the raw format to confirm delimiter pattern; (2) Split content by delimiter to isolate each entry block; (3) Parse each block separately to extract required fields; (4) Test parsing on a small subset before processing entire dataset. This delimiter-first approach is more reliable than line-by-line state tracking for clearly delimited content.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 92,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00050",
+      "text": "For tasks requiring genre information for songs (e.g., filtering songs by genre like 'reggae'), always use the authoritative `show_song` API to retrieve the genre field. Do not infer genre from other sources (e.g., album genre or playlist metadata) as songs may have different genres than their albums or playlists.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 64,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00052",
+      "text": "When filtering by genre or other categorical attributes that may have compound labels (e.g., 'Indie Rock', 'Alternative/Indie'), use substring matching instead of exact equality. Perform case-insensitive checks like `'indie' in genre.lower()` to capture all relevant items, as genre labels may include prefixes or suffixes.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 66,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00053",
+      "text": "When interpreting 'this year' or similar relative date references in file system tasks (e.g., filtering files by year), always verify the current year using system APIs like `apis.phone.get_current_date_and_time()` rather than assuming based on file naming patterns. This ensures correct filtering even when file dates span multiple years.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 63,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00058",
+      "text": "When parsing Simple Note content with repeating entries separated by blank lines (e.g., movie recommendations with title, director, genre lines grouped by double newlines), always use delimiter-first splitting: examine raw format to confirm delimiter pattern, split content by delimiter (e.g., double newline), parse each block separately. Test parsing on a small subset before processing entire dataset to ensure correctness.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 75,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00060",
+      "text": "For file organization tasks based on creation dates (e.g., organizing photos by month/year): (1) Use file system APIs to get creation dates via `show_file` API, (2) Determine current year from system APIs like `apis.phone.get_current_date_and_time()` to interpret 'this year', (3) Categorize files based on month/year as per task rules, (4) Create directories if missing using `create_directory`, (5) Move files preserving names using `move_file`, (6) Verify final state by checking directory contents. Always verify categorization logic matches task description explicitly.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 122,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00061",
+      "text": "When categorizing files by date ranges in file system tasks, carefully interpret ambiguous phrases like 'others' or 'remaining'. Validate categorization logic against the full task description: if the task explicitly mentions all files belong to certain categories (e.g., 'photos from three vacations'), ensure all files are assigned accordingly. Consider whether 'others' includes files from previous years or only files from the current year not matching specified months. If ambiguous, prioritize inclusive categorization (include all non-specified files) unless task explicitly excludes them.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 105,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00062",
+      "text": "When removing songs from library and playlists based on a condition (e.g., release date before a certain year), follow this workflow: (1) Authenticate and get access token; (2) Fetch all songs from library with pagination; (3) For each song, check condition via show_song API; (4) Remove qualifying songs from library; (5) Fetch all playlists with pagination; (6) For each playlist, fetch its songs and check condition via show_song; (7) Remove qualifying songs from each playlist; (8) Verify final state by re-checking library and playlists to ensure no songs with the condition remain. This ensures comprehensive removal from both collections.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 135,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00065",
+      "text": "When performing verification steps after batch operations, ensure you use the same field names as those used during data collection. Store field names from API responses in variables or refer to documentation consistently. For example, if show_playlist_library returns 'playlist_id', use 'playlist_id' in verification, not assumed fields like 'playlist_order'. Always verify API response structure before accessing fields, especially during verification to avoid key errors.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 81,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00067",
+      "text": "When creating a playlist to meet a time-based requirement (e.g., workout duration): (1) Determine the required total duration from the source (e.g., workout plan). (2) Choose an approach: either (a) compute required number of songs based on estimated average song duration (e.g., 3 minutes) and verify total duration after selection, or (b) add songs until cumulative duration meets the requirement. (3) If you change the song duration assumption (e.g., from 3-minute to 4-minute songs), recalculate the required count: needed_songs = ceil(required_minutes / assumed_minutes_per_song). (4) Always verify the final playlist's total duration exceeds the requirement before playing.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 145,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00068",
+      "text": "When creating playlists or collections to meet quantity requirements (e.g., number of songs for a workout duration), if one data source is insufficient, aggregate from multiple sources (e.g., library songs, liked songs, search results). Use a set to collect unique IDs to avoid duplicates when combining from multiple sources. This ensures you meet the quantity requirement efficiently without redundant additions.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 73,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00071",
+      "text": "When creating a playlist to meet a time-based requirement (e.g., workout duration), after creating the playlist, immediately check its contents via show_playlist to see if songs were automatically added. If the playlist already contains sufficient duration, you can skip manual song addition. This saves time and avoids redundant API calls.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 61,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00072",
+      "text": "For Spotify library cleanup tasks with conditions like 'keep songs that are liked OR downloaded' and 'keep albums that are liked OR have all songs downloaded': (1) Authenticate and get access token; (2) Fetch song library, liked songs, and downloaded songs with pagination; (3) Identify songs to remove (neither liked nor downloaded) using set operations; (4) Fetch album library and liked albums with pagination; (5) For each album, fetch album details to get song IDs, then check if all songs are downloaded; (6) Identify albums to remove (neither liked nor fully downloaded); (7) Perform batch removals; (8) Verify final state by re-fetching libraries and checking conditions. This ensures comprehensive cleanup matching the task requirements.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 155,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00074",
+      "text": "For file system tasks involving compression and deletion: (1) authenticate first, (2) examine directory structure to identify target directories, (3) use compress_directory API with delete_directory=True to compress and delete in one operation, (4) specify compressed_file_path with correct naming convention (e.g., <vacation_spot>.tar), (5) set overwrite=True to safely overwrite existing compressed files if needed, (6) verify final state by checking directory contents to confirm directories are gone and compressed files exist.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 102,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00076",
+      "text": "For file system tasks involving batch processing of sub-directories (e.g., compressing each vacation spot directory), always extract the sub-directory names programmatically from the directory listing. Use the `show_directory` API with appropriate parameters (e.g., entry_type='directories') to get a list of sub-directory paths, then parse the vacation spot names from those paths (e.g., extracting the last component). This ensures the solution works correctly even if directory names are not known beforehand or change over time.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 100,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00078",
+      "text": "For tasks involving Spotify recommendations filtered by genre and release year: (1) Authenticate and get current date via phone API to determine 'this year'; (2) Fetch all recommendations via show_recommendations with pagination; (3) For each recommendation, use show_song API to get authoritative genre and release_date; (4) Filter songs using substring matching for genre (e.g., 'classical' in genre.lower()) and check release_date year matches current year; (5) Create playlist with appropriate title; (6) Add filtered songs; (7) Verify playlist contents via show_playlist. This ensures accurate filtering based on authoritative data.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 127,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00081",
+      "text": "When filtering by genre (e.g., 'R&B'), consider common genre label variations such as 'R&B', 'RnB', 'Rhythm and Blues', 'R&B/Soul', etc. Use substring matching with case-insensitive checks (e.g., 'r&b' in genre.lower() or 'rnb' in genre.lower() or 'rhythm and blues' in genre.lower()) to capture all relevant songs.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 89,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00082",
+      "text": "For Spotify queue tasks involving 'played so far' or 'current song': (1) Use show_song_queue to get the queue with position and is_current/is_playing fields; (2) Identify the current song using is_current or is_playing fields; (3) Songs played so far are those with position ≤ current_position; (4) For tasks requiring actions on 'played' songs, filter by position relative to current song. Always verify queue structure by examining sample responses to understand field meanings.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 99,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00085",
+      "text": "For Venmo refund tasks where a payment request was accidentally approved: (1) Use show_sent_payment_requests to retrieve all sent requests with pagination, (2) Filter by receiver_email to match the recipient, (3) Filter by approved_at (non-null) to find approved requests, (4) Sort by created_at to find the most recent (last) approved request, (5) Use create_transaction to send money back with the same amount and an explanatory description (e.g., 'Refund for accidentally approved request'). This ensures you refund the correct transaction.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 113,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00087",
+      "text": "For bulk deletion tasks involving phone messages (text and voice) from specific contacts: (1) Authenticate with Phone app first; (2) Use search_text_messages and search_voice_messages APIs with phone_number parameter to filter messages from the target contact; (3) Paginate through all pages by incrementing page_index until empty results; (4) Collect all message IDs from both search results; (5) Call delete_text_message and delete_voice_message APIs iteratively for each ID; (6) Verify deletion by searching again to confirm zero remaining messages.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 110,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00090",
+      "text": "For tasks requiring filtering artists by genre and follower count (or other criteria), use the search_artists API with combined filter parameters (genre, min_follower_count, max_follower_count) to get pre-filtered results directly from the API. This reduces API calls and improves efficiency compared to fetching all artists and filtering client-side.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 66,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00093",
+      "text": "For tasks involving financial calculations from parsed text (e.g., bill amounts from receipts): (1) Extract numeric values programmatically using string parsing (e.g., search for patterns like 'Total Amount => $' and extract the number); (2) Use float conversion or Decimal for precise arithmetic; (3) Format amounts to 2 decimal places when sending payment requests to avoid rounding issues. Never rely on manual inspection or hard-coded values.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 88,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00095",
+      "text": "When splitting bills for reimbursement (e.g., \"shared equally among my roommates and me\"): (1) Determine the total bill amount from the receipt/file; (2) Identify all roommates using Phone's search_contacts with relationship='roommate'; (3) Calculate share_amount = total_amount / len(roommates). Do NOT include yourself in the divisor, because you are requesting reimbursement from others only, not requesting money from yourself.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 87,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00097",
+      "text": "For tasks involving marking items as done in structured checklist notes (like bucket lists with [x]/[ ] markers): (1) locate the note containing the list via search using relevant keywords; (2) parse the content to identify the specific item to update; (3) update the content by replacing the marker (e.g., '[ ]' → '[x]') while preserving the rest of the note structure; (4) verify the update by re-fetching the note to ensure the change was applied correctly. Always verify the update to ensure the task is fully completed.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 115,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00098",
+      "text": "When updating checklist items in notes (e.g., marking '[ ]' → '[x]'), ensure precise matching by searching for the exact line pattern '[ ] Item text' rather than just the item text alone. This prevents accidental updates to similar items or descriptions that contain the same text. Also check if the item is already marked done ([x]) before updating to avoid redundant operations.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 76,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00100",
+      "text": "For alarm manipulation tasks (e.g., moving alarms forward/backward): (1) Parse alarm time strings in HH:MM format, (2) Convert hours and minutes to integers, (3) Add/subtract hours with modulo 24 to handle overflow (e.g., moving 23:00 forward 2 hours becomes 01:00), (4) Reconstruct time string with zero-padded formatting. Use update_alarm API with time parameter to change time, and enabled=False to disable alarms (not delete_alarm).",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 105,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00102",
+      "text": "When computing aggregate values across nested collections (e.g., playlist durations by summing song durations), cache intermediate data (like song durations) to avoid redundant API calls. First collect all unique IDs from all collections, fetch details for each unique ID once, store them in a dictionary, then use the cached data for all calculations. This reduces API calls significantly when the same item appears in multiple collections.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 79,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00106",
+      "text": "For tasks involving finding 'least listened' or 'most listened' songs based on play_count metrics: (1) Authenticate and get access_token; (2) Search for the album if needed; (3) Retrieve song IDs from album or other source; (4) Use show_song API for each song to get play_count field; (5) Compare play_counts to identify min/max; (6) Perform action (play, like, etc.) on the identified song. This ensures accurate identification based on actual listening data.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 105,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00107",
+      "text": "When searching for a specific named entity (e.g., playlist, song, artist), consider using dedicated search APIs (like search_playlists, search_songs, search_artists) with query parameter, as they may return the target directly without iterating through all pages of a library API. This can be more efficient when you know the exact name. However, if the search API does not guarantee exact matches, fallback to paginated library iteration.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 88,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00109",
+      "text": "When searching for a specific album by name (e.g., 'Velvet Underground'), verify you have the correct album by checking album details (artist, release_date) or ownership (library). If search returns multiple albums with similar names, examine additional fields (artist, release_date) to select the exact match. For tasks implying ownership (e.g., 'my Velvet Underground album'), consider using show_album_library instead of search_albums to ensure you select an album you own.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 95,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00111",
+      "text": "For tasks to reject/deny pending Venmo payment requests from specific relationship groups: (1) Authenticate with Venmo and Phone apps; (2) Use Phone's search_contacts with relationship parameter to get contacts (friends, roommates, etc.); (3) Fetch pending payment requests via show_received_payment_requests with status='pending' parameter; (4) Paginate through all requests; (5) Filter requests where sender email matches contact emails; (6) Deny each filtered request using deny_payment_request; (7) Verify final state by re-fetching pending requests to confirm none remain from those contacts.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 123,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00112",
+      "text": "For tasks to approve pending Venmo payment requests from specific relationship groups: (1) Authenticate with Venmo and Phone apps; (2) Use Phone's search_contacts with relationship parameter to get authoritative contact list; (3) Fetch pending payment requests via show_received_payment_requests with status='pending' parameter; (4) Paginate through all requests; (5) Filter requests where sender email matches contact emails; (6) Approve each filtered request using approve_payment_request; (7) Verify final state by re-fetching pending requests to confirm none remain from those contacts. This ensures all payment requests from the specified relationship groups are approved.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 128,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00114",
+      "text": "For tasks requiring finding the most-played or least-played song by a specific artist: (1) Authenticate and get access_token; (2) Use search_songs with the artist name as query; (3) Paginate through all pages by checking each page until empty; (4) Filter songs by checking if the target artist_id appears in the song's artists list; (5) For each filtered song, retrieve play_count via show_song API (note: search_songs may already include play_count); (6) Track maximum/minimum play_count during iteration; (7) Return the song title with the highest/lowest play_count. Ensure filtering by artist_id, not just by query match, as search_songs returns songs where query matches title OR artist name.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 156,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00115",
+      "text": "When searching for songs by a specific artist: (1) First search for the artist via search_artists to get the artist_id, (2) Then use search_songs with artist_id filter to retrieve songs by that artist directly. This avoids retrieving irrelevant songs where the artist name appears only in song titles, improving efficiency and accuracy.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 67,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00117",
+      "text": "For tasks requiring batch follow/unfollow operations on entities derived from user data (e.g., artists from liked songs, albums from library): (1) authenticate and fetch source data with pagination, (2) extract target IDs, (3) check current state to avoid redundant operations using APIs like show_following_artists or show_liked_albums, (4) perform batch updates (follow/unfollow) on missing items, (5) verify final state by re-checking the current state. This ensures completeness and avoids redundant operations.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 107,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00120",
+      "text": "For tasks requiring finding maximum/minimum across collections (e.g., most-liked song across all playlists): (1) authenticate properly, (2) paginate through all pages of each collection, (3) collect all unique IDs from the collections to avoid duplicates, (4) fetch necessary details for each item via appropriate APIs (e.g., show_song for like_count), (5) track maximum/minimum during iteration by comparing the metric, (6) verify ties by checking if multiple items share the maximum/minimum value.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 105,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00122",
+      "text": "For tasks requiring specific metrics like play_count or like_count across a collection (e.g., songs in library, songs in album), first examine the API response schema of the collection API (show_song_library, show_liked_songs, etc.) to see if it includes the metric field. If the collection API returns the metric directly, use that data to avoid unnecessary individual show_song calls. If it doesn't include the metric, then fetch each item's details via show_song API. This optimization reduces API calls while ensuring accuracy.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 106,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00124",
+      "text": "For tasks finding the most-played or least-played song in a collection (e.g., album library): authenticate and get access_token, fetch all albums from library with pagination (via show_album_library), extract song IDs from each album's song_ids, use show_song API for each song to get play_count field, compare play_counts to identify maximum/minimum, and verify ties by checking if multiple songs share the same maximum/minimum value. This workflow ensures completeness and accurate identification based on actual listening data.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 102,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00125",
+      "text": "For tasks requiring intersection of two sets (e.g., songs in album library AND liked songs, songs in playlists AND downloaded songs): (1) fetch all items from both sources with pagination, (2) convert each to sets of IDs, (3) compute the intersection using set operations, (4) process only the intersecting items. This ensures you only operate on items meeting both criteria and avoids processing irrelevant items. When one source is significantly larger than the other, consider fetching the smaller set first and checking membership against the larger set using membership APIs if available.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 113,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00128",
+      "text": "When performing batch 'like' operations (e.g., liking Venmo transactions), verify success by checking the actual metric (like_count) via show_transaction API after the operation, rather than relying on API response message parsing or re-attempting likes. This avoids duplicate operations that may fail with 422 errors and ensures accurate verification.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 66,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00130",
+      "text": "For Spotify backup/export tasks requiring all songs from multiple sources (song library, album library, playlists): (1) Authenticate and get access token; (2) Fetch song IDs from each source using pagination: show_song_library for song library, show_album_library for album library (extract song_ids from each album), show_playlist_library for playlists (extract song_ids from each playlist); (3) Combine IDs using set union to ensure uniqueness; (4) Fetch song details via show_song API for each unique ID; (5) Format data as required (e.g., CSV with headers 'Title' and 'Artists', artists separated by '|'); (6) Create backup file in file system; (7) Verify file creation; (8) Only then perform irreversible actions like account termination. This ensures comprehensive backup before destructive operations.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 166,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00133",
+      "text": "When parsing Simple Note content with repeating entries separated by blank lines, if delimiter-based splitting (e.g., content.split('\\n\\n')) fails to correctly extract entries due to irregular whitespace or complex patterns, immediately switch to regex-based parsing using patterns that match the observed structure (e.g., r'(.+?)\\n - director: Director Name'). Test regex on a small subset before full processing to ensure it captures all required entries.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 87,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00135",
+      "text": "For Venmo tasks involving received payments from specific relationship groups (coworkers, friends, roommates): when fetching transactions, always use the direction='received' parameter in show_transactions API to efficiently retrieve only payments you received. This reduces API calls and simplifies filtering compared to fetching all transactions and checking receiver email manually.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 64,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00136",
+      "text": "For Venmo tasks requiring transactions from multiple contacts (friends, roommates, etc.), fetch all transactions within the date range using a single paginated call with direction filter, then filter client-side by checking sender email against the contact list. Avoid making separate API calls for each contact, as this is inefficient and may miss transactions if pagination limits apply per call.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 71,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00138",
+      "text": "When parsing human-readable date strings returned by APIs (e.g., 'Friday, June 02, 2023' from phone.get_current_date_and_time()), always use datetime.strptime with the exact format string rather than manual string splitting. First examine the string format, then use appropriate format codes (e.g., '%A, %B %d, %Y'). Test parsing on a small sample before using in calculations. For date range calculations like 'last N days including today', compute min_date = today - timedelta(days=N-1). This ensures robust date handling and avoids IndexErrors from incorrect string splitting.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 122,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00139",
+      "text": "For tasks involving finding 'least frequent' or 'minimum count' items from API data (e.g., least recommended artist, least played song): authenticate properly, use pagination to collect all items, extract relevant fields, count occurrences using dictionaries or collections, track the minimum count during iteration, check for ties, and return the result. Always verify completeness by checking page counts and edge cases. This is the inverse of [shr-00029] for 'most frequent' items; apply similar counting and verification logic but track minimum instead of maximum.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 108,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00140",
+      "text": "For tasks finding the oldest or newest song across multiple Spotify libraries (song, album, playlist): (1) authenticate and get access_token; (2) paginate through all pages of each library (show_song_library, show_album_library, show_playlist_library); (3) collect unique song IDs using sets (song IDs from song library, album song_ids, playlist song_ids); (4) fetch each song's details via show_song API to get authoritative release_date; (5) parse release_date strings using datetime.fromisoformat; (6) track minimum/maximum date during iteration; (7) verify ties by checking if multiple songs share the same oldest/newest date. This ensures comprehensive coverage across all specified sources and accurate date comparison.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 148,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00142",
+      "text": "For tasks involving shared expenses with friends where you need to request payments from those who haven't paid: (1) parse the note content to extract names and amounts; (2) use Phone's search_contacts with relationship='friend' to get authoritative friend list and emails; (3) filter Venmo transactions by date range (min_created_at/max_created_at) and direction='received' to efficiently retrieve only payments you received; (4) match both sender email and amount to identify paid friends; (5) send payment requests only to unpaid friends with appropriate description. This ensures accurate identification and avoids duplicate requests.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 122,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00143",
+      "text": "For tasks requiring following artists of songs matching a specific genre across playlists: (1) authenticate and get all playlists via show_playlist_library with pagination, (2) collect all unique song IDs from playlists via show_playlist, (3) fetch each song's genre via show_song API (authoritative source), (4) filter songs by genre using substring matching (case-insensitive), (5) extract artist IDs from filtered songs (artists field includes all artists), (6) check currently followed artists via show_following_artists with pagination, (7) follow missing artists via follow_artist, (8) verify final state by re-checking follow list. This ensures all artists of genre-filtered songs are followed without duplicates.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 144,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00144",
+      "text": "For tasks requiring following artists of songs matching a specific genre across playlists: ensure you extract all artist IDs from the song's artists field (which includes all contributors) and follow each of them individually. When verifying the final state, check that each artist ID from the filtered songs is present in the updated follow list, not just count matches.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 67,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00147",
+      "text": "For tasks requiring filtering songs by genre across multiple playlists: (1) Collect all song IDs from all playlists, but cache song genre information in a dictionary to avoid redundant show_song API calls for duplicate songs that appear in multiple playlists. (2) Use sets for artist IDs to automatically deduplicate artists across songs. (3) Consider filtering songs during collection if efficiency is critical: when fetching playlist songs, check genre for each song immediately and only store indie-song IDs; however, caching song genre data may be more efficient overall.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 105,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00153",
+      "text": "For file system tasks involving moving files to subdirectories, when verifying that files have been successfully moved out of the parent directory, always use show_directory with recursive=False to check only files directly in the parent directory. This prevents misinterpretation where recursive listing includes files in subdirectories, which could falsely indicate files remain in the parent directory.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 67,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00154",
+      "text": "When categorizing files by date ranges where 'others' refers to files not matching specified date criteria, ensure inclusive interpretation: include all files that do not match the specified criteria, regardless of whether they are from previous years or different months. For tasks like 'files created in January and April of this year correspond to Athens and Seoul, while the others are from Paris', 'others' means all remaining files after applying the specified month/year filters, not just files from the current year in other months.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 99,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00155",
+      "text": "For batch removal tasks across multiple collections (e.g., removing songs from library and playlists based on release date), optimize by collecting all unique song IDs from all sources first, fetching their details once, caching the data (e.g., release_date in a dictionary), then using the cache for all decisions. This reduces redundant API calls when the same song appears in multiple collections or when checking the same song multiple times.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 82,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00156",
+      "text": "When creating a playlist to meet a time-based requirement (e.g., workout duration) and selecting songs from a pool, sort songs by duration (longest first) to efficiently reach the required total duration with fewer songs. This reduces the number of API calls for adding songs to the playlist and ensures you meet the duration requirement faster. After sorting, add songs until cumulative duration ≥ required duration, then stop.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 81,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00158",
+      "text": "For tasks requiring determination of 'today' or current day of week (e.g., workout plans with daily schedules), always use the phone app's get_current_date_and_time() API to get the current date, then parse the day of week from the returned string (e.g., 'Wednesday, May 24, 2023'). This ensures correct identification of the current day for time-sensitive tasks.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 80,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00159",
+      "text": "For batch removal operations (e.g., removing songs from library, albums from library), when encountering 422 errors indicating 'item not in library' or similar, handle gracefully by: (1) re-fetching the current state of the library to get an updated list of items, (2) comparing against your target removal list to identify which items were already removed or not present, (3) continuing with remaining removals. This prevents execution failures and ensures the task completes even when some target items are already absent.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 103,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00160",
+      "text": "For Spotify library cleanup tasks where an album is considered downloaded only if all its songs are downloaded: (1) Fetch album details via show_album API to get the list of song IDs in the album (note: show_album returns 'songs' array with 'id' fields, not 'song_ids' array). (2) Check if every song ID from the album is present in the downloaded songs set. (3) If any song is missing from downloaded songs, the album is not considered fully downloaded and should be removed unless it's liked. This ensures accurate implementation of the 'all songs downloaded' condition.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 122,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00161",
+      "text": "When parsing structured content (e.g., notes with repeating entries) and the initial parsing fails to extract data (returns empty list or incorrect results), immediately re-examine the raw format to identify the correct pattern. If entries are separated by clear delimiters (e.g., double newlines), switch to delimiter-based splitting. If delimiter-based splitting fails due to irregular whitespace, use regex-based parsing matching the observed structure. Test the new parsing approach on a small subset before processing the entire dataset. Never fall back to manual extraction; instead, fix the parsing algorithm to ensure scalability and correctness for similar future tasks.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 121,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00162",
+      "text": "For tasks requiring filtering by 'this or last year' or similar two-year ranges: (1) Use phone.get_current_date_and_time() to determine current year; (2) Define target years as current_year and current_year-1; (3) When checking release_date, accept songs where release_year equals either target year. This ensures correct interpretation of phrases like 'this or last year' which includes both the current year and the previous year.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 90,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00163",
+      "text": "For Spotify tasks requiring liking songs (e.g., liking all songs in queue up to current position): (1) First fetch existing liked songs via show_liked_songs with pagination to get a set of already-liked song IDs; (2) Identify target songs to like; (3) Filter out songs already liked to avoid redundant operations; (4) Like only the remaining songs; (5) Verify final state by re-fetching liked songs to ensure all target songs are now liked. This prevents duplicate liking attempts and optimizes API usage.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 110,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00165",
+      "text": "When searching for artists by genre using the search_artists API, prefer the genre parameter over the query parameter for accurate filtering. If you use the query parameter (e.g., query='classical'), the search may return artists whose names contain the query term but whose actual genre is different. Always verify the genre field in the response and apply client-side substring matching to ensure only artists with the target genre are selected.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 83,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00168",
+      "text": "For tasks involving 'last month' or similar relative date references in file system tasks (e.g., locating a bill receipt from 'last month'): (1) Use phone.get_current_date_and_time() to determine the current date; (2) Calculate the previous month (e.g., if current date is May 2023, 'last month' is April 2023); (3) Search for files with naming patterns matching that month (e.g., '2023-04.txt' for April 2023). This ensures you locate the correct file even when multiple monthly files exist.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 119,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00169",
+      "text": "For shared expense tasks where the bill receipt is in the file system and needs to be split among roommates/friends: (1) Authenticate with file_system, phone, and venmo apps; (2) Determine the correct bill file using date logic (e.g., 'last month' via phone.get_current_date_and_time); (3) Parse the total amount from the file content using string parsing; (4) Identify roommates/friends using phone.search_contacts with relationship parameter; (5) Calculate share amount = total_amount / (number_of_roommates + 1) when bill is shared 'among my roommates and me' (i.e., include yourself in the total people count but exclude yourself from recipients); (6) Send Venmo payment requests to each roommate with appropriate description. This workflow ensures end-to-end completion of shared expense reimbursement tasks.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 173,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00170",
+      "text": "After sending Venmo payment requests for shared expenses, verify they were successfully created by fetching sent payment requests using show_sent_payment_requests API and filtering by description and amount. This ensures the requests were properly recorded and allows you to confirm the correct recipients and amounts.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 51,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00173",
+      "text": "When parsing structured content (e.g., notes with repeating entries) and delimiter-based splitting fails to yield correct results (returns empty list or incomplete data), immediately re-examine the raw format and switch to regex-based extraction using patterns that match the observed structure (e.g., r'(.+?)\\n - director: (.+)'). Test regex on a small subset before processing the entire dataset. Avoid manual extraction; instead, fix the parsing algorithm to ensure scalability and correctness for similar future tasks.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 99,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00175",
+      "text": "When finding maximum/minimum metrics across playlists (e.g., most-liked song in playlists), first examine the response schema of playlist APIs (show_playlist, show_playlist_library) to see if they include the metric field (like_count, play_count). If the playlist API returns the metric directly, use that data to avoid unnecessary individual show_song calls. This optimization reduces API calls while ensuring accuracy, especially when processing many playlists.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 85,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00176",
+      "text": "When a task says 'disable the rest' or similar phrasing regarding alarms, interpret it as disabling only the currently enabled alarms, not all other alarms regardless of their current state. Check each alarm's enabled field and only apply disable operations to those that are currently enabled (enabled=True). This avoids redundant operations on already-disabled alarms.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 66,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00177",
+      "text": "When adding or subtracting minutes to alarm times (e.g., moving alarm 20 minutes later), handle both minutes overflow (minutes ≥ 60) and hours overflow (hours ≥ 24) correctly. First add minutes to the current minutes, then adjust hours if minutes ≥ 60: hours += minutes // 60; minutes = minutes % 60. Then handle hours overflow with modulo 24: hours = hours % 24. This ensures correct time calculation for any minute adjustment.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 98,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00178",
+      "text": "For tasks requiring playlist durations (e.g., finding longest playlist): (1) authenticate and get access token, (2) fetch all playlists via show_playlist_library with pagination, (3) for each playlist, fetch its songs via show_playlist, (4) for each song, fetch duration via show_song API (duration in seconds), (5) sum durations per playlist, (6) find maximum duration across playlists, (7) convert seconds to minutes (divide by 60), (8) round to nearest integer using round(). This workflow ensures accurate calculation of playlist durations and identification of the longest playlist.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 122,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00180",
+      "text": "When paginating through APIs using page_index, start with page_index = 0 unless the API documentation explicitly states otherwise. Most APIs use zero-based indexing for pages. Always check the default value in the API specification to confirm the starting index.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 48,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00181",
+      "text": "For tasks requiring playing the least listened song from a specific named album (e.g., 'Play the least listened to song on Spotify from the Echo Chamber Chronicles album'): (1) Authenticate and get access_token; (2) Search for the album by name using search_albums API; (3) Verify you have the correct album by checking album details (title, artists) if multiple matches exist; (4) Retrieve album details via show_album API to get song IDs; (5) For each song ID, fetch play_count via show_song API; (6) Identify the song with minimum play_count; (7) Play the identified song using play_music API with song_id parameter. This ensures accurate identification and playback of the least listened song from the specified album.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 154,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00184",
+      "text": "For Venmo tasks requiring actions on payment requests from multiple relationship categories (e.g., 'friends and roommates'), fetch contacts for each relationship separately using Phone's search_contacts with relationship parameter, then combine the contact lists. This ensures comprehensive coverage when the task mentions multiple relationship types. Use set operations to deduplicate contacts by email to avoid processing duplicates.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 70,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00186",
+      "text": "For tasks requiring batch approval/rejection of Venmo payment requests from multiple relationship groups (e.g., 'coworkers and friends'): (1) Authenticate with Venmo and Phone apps; (2) Use Phone's search_contacts with relationship parameter to get authoritative contact lists for each relationship type separately; (3) Combine contact lists and deduplicate by email; (4) Fetch pending payment requests via show_received_payment_requests with status='pending' parameter and paginate through all pages; (5) Filter requests where sender email matches contact emails; (6) Perform batch operations (approve/deny) on filtered requests; (7) Verify completion by re-fetching pending requests and confirming zero remain from target contacts. This ensures comprehensive coverage when the task mentions multiple relationship types and prevents missing requests.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 158,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00187",
+      "text": "For tasks requiring finding the most-played song by a specific artist: (1) authenticate properly and get access_token; (2) search for the artist via search_artists to get the artist_id; (3) use search_songs with artist_id filter to efficiently retrieve songs by that artist directly; (4) paginate through all pages by incrementing page_index until empty results; (5) check if search_songs includes play_count field (it does) and use it directly; (6) track maximum play_count during iteration; (7) verify ties by checking if multiple songs share the maximum play_count; (8) return the song title with the highest play_count. This approach minimizes API calls by using artist_id filter and leveraging play_count from search_songs response, ensuring efficiency and accuracy.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 163,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00188",
+      "text": "When searching for maximum/minimum values via APIs that support sorting (like search_songs with sort_by parameter), use server-side sorting to directly get the top item(s). For example, when finding the most-played song by an artist, use search_songs with artist_id filter and sort_by='-play_count' to retrieve songs sorted by play_count descending. This reduces client-side processing and ensures efficiency. Always check API parameters for sorting options before implementing client-side maximum/minimum tracking.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 97,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00189",
+      "text": "For tasks requiring unfollowing artists who have not 'sung' any liked songs: (1) Authenticate and fetch all liked songs via show_liked_songs with pagination; (2) Extract ALL artist IDs from each song's 'artists' field (includes all contributors); (3) Fetch all followed artists via show_following_artists with pagination; (4) Compute set difference: artists_to_unfollow = followed_artist_ids - liked_artist_ids; (5) Unfollow each artist in the difference set; (6) Verify final state by re-fetching followed artists and ensuring remaining artists are in liked_artist_ids. This ensures you unfollow only artists with zero association to your liked songs.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 141,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00190",
+      "text": "For tasks requiring following artists from liked songs: (1) authenticate and fetch all liked songs with pagination via show_liked_songs; (2) extract ALL artist IDs from each song's artists field (includes all contributors); (3) fetch currently followed artists via show_following_artists with pagination; (4) compute set difference: artists_to_follow = artist_ids_from_liked_songs - followed_artist_ids; (5) follow each artist in the difference set via follow_artist; (6) verify final state by re-fetching followed artists and ensuring artist_ids_from_liked_songs ⊆ followed_artist_ids_updated. This ensures you follow all artists associated with your liked songs without duplicates.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 140,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00192",
+      "text": "When collecting songs from playlists to compute metrics (like like_count, play_count, duration), first examine the playlist library API response (show_playlist_library) to see if it includes song_ids directly. If it does, use those song_ids to fetch song details via show_song, avoiding unnecessary show_playlist calls for each playlist. This reduces API calls significantly when you only need song IDs and not other playlist details.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 81,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00194",
+      "text": "When parsing structured content fails and the dataset is small and simple (e.g., a few entries in a note), manually inspecting the raw content and extracting required information can be a valid fallback strategy, especially when the task is time-sensitive. However, for more complex or larger datasets, always fix the parsing algorithm to ensure scalability and correctness for similar future tasks. Use manual extraction only as a last resort when the data volume is minimal and the task deadline is imminent.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 93,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00195",
+      "text": "When filtering Venmo transactions by relative dates like 'yesterday', compute the date dynamically using the current date from phone.get_current_date_and_time(). Parse the date string using datetime.strptime, subtract one day using timedelta(days=1), and format as YYYY-MM-DD for comparison with created_at fields. This ensures the solution works correctly regardless of system date changes and avoids hardcoding date strings.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 77,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00197",
+      "text": "For batch liking operations on Venmo transactions: (1) Fetch each transaction's details via show_transaction API to get current like_count; (2) Only like transactions where like_count == 0 (or if the task explicitly requires liking regardless of current state, proceed but note that duplicate likes may be allowed); (3) After liking, verify success by checking updated like_count > 0 via show_transaction. This prevents redundant API calls and ensures efficient execution, especially when the task requires liking 'all' transactions but some may already be liked.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 109,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00198",
+      "text": "For Spotify backup/export tasks collecting songs from playlists: check the response schema of show_playlist_library API to see if it includes song_ids field. If it does, use those song_ids directly without needing to call show_playlist for each playlist. This reduces API calls and improves efficiency. If song_ids are not present, then fetch playlist details via show_playlist to get song IDs.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 74,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00202",
+      "text": "For Spotify backup/export tasks that require terminating the account after creating the backup file: (1) create the backup file first; (2) verify file creation using file_exists API; (3) verify file content by reading the file and ensuring it contains all expected songs; (4) only then call delete_account API; (5) after deletion, verify account termination by attempting a simple API call (e.g., show_profile) to confirm failure (401/403) or check that the account no longer exists. This ensures the backup is complete and usable before irreversible deletion.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 115,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00205",
+      "text": "When parsing Simple Note content with repeating entries separated by blank lines where each entry consists of multiple lines (e.g., title line followed by '- director:' and '- genre:' lines), use line-by-line state tracking parsing: iterate through lines, store current title when encountering a non-dash line, then check director line to decide inclusion. This approach works when delimiter splitting fails due to irregular blank lines or complex patterns.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 83,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00207",
+      "text": "For batch comment operations on Venmo transactions: (1) Fetch each transaction's details via show_transaction API to get current comment_count; (2) Only add a comment if comment_count == 0 (or if the task explicitly requires commenting regardless of current state). This prevents redundant operations and ensures efficient execution, especially when the task requires commenting 'all' transactions but some may already have comments.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 79,
+      "metadata": {}
+    },
+    {
+      "id": "api-00004",
+      "text": "You can use the \"supervisor\" app to get information about my accounts and use the \"phone\" app to get information about friends and family.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 30,
+      "metadata": {}
+    },
+    {
+      "id": "api-00011",
+      "text": "When parsing structured content (e.g., notes, messages, lists), examine the actual response format before writing parsing logic. For Simple Note content, the note content is returned as a string with specific formatting; parse it carefully to avoid errors.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 48,
+      "metadata": {}
+    },
+    {
+      "id": "api-00018",
+      "text": "For Spotify's update_song_review API: requires review_id parameter (integer) in addition to song_id, rating, and access_token. Always retrieve the review_id from show_song_reviews response (song_review_id field) before calling update_song_review.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 49,
+      "metadata": {}
+    },
+    {
+      "id": "api-00020",
+      "text": "When searching for contacts with specific relationships (like coworkers), use the relationship parameter in the Phone app's search_contacts API to filter directly. This is more efficient and accurate than searching by name and then checking relationships manually.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 43,
+      "metadata": {}
+    },
+    {
+      "id": "api-00026",
+      "text": "For Venmo tasks involving 'friends', always use Venmo's search_friends API as the authoritative source for friend identification. Venmo friendships are platform-specific and may differ from Phone contacts; using Venmo's friend list ensures correct identification of transactions from friends.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 51,
+      "metadata": {}
+    },
+    {
+      "id": "api-00030",
+      "text": "For Spotify tasks involving 'recommended' artists or songs, use the `show_recommendations` API as the primary source. This API returns personalized song recommendations with artist details; paginate through all pages to collect complete data.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 43,
+      "metadata": {}
+    },
+    {
+      "id": "api-00032",
+      "text": "For Spotify tasks involving song IDs from APIs like `show_liked_songs`, `show_song_library`, etc., always check the actual response schema to determine the exact field name (e.g., `song_id` vs `song_(id`). The field names may vary between APIs; rely on API documentation or inspect sample responses.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 66,
+      "metadata": {}
+    },
+    {
+      "id": "api-00036",
+      "text": "For Spotify tasks involving song release dates: always use the `show_song` API to get individual song release dates, not album-level release dates. Songs may have different release dates than their albums; relying on album release_date may lead to incorrect results.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 50,
+      "metadata": {}
+    },
+    {
+      "id": "api-00038",
+      "text": "When parsing Simple Note content containing share lists (e.g., dinner expense splits with format '- Name => $Amount'), use simple line-based parsing: split content by newline, filter lines starting with '-', then extract name and amount using string splitting. Avoid complex state tracking for this straightforward pattern.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 57,
+      "metadata": {}
+    },
+    {
+      "id": "api-00044",
+      "text": "For Venmo tasks involving friends (even implicitly mentioned as 'friends' in the task context), always use Venmo's search_friends API as the primary source for identifying friends, then search_users for non-friends if needed. Venmo friendships are authoritative for determining who can receive payment requests.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 58,
+      "metadata": {}
+    },
+    {
+      "id": "api-00045",
+      "text": "For Venmo's show_sent_payment_requests API, the response uses 'receiver' field (not 'user') to identify the recipient. Always check the exact response schema documentation before accessing fields, as different APIs may use different field names for similar concepts.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 50,
+      "metadata": {}
+    },
+    {
+      "id": "api-00054",
+      "text": "For file system tasks involving multiple file formats (e.g., txt and PDF), attempt to read all relevant formats before concluding data is unavailable. Even if PDF files appear binary, check if they contain readable text content using `show_file` API. If content is binary/unreadable, consider alternative approaches like checking for txt counterparts or noting missing data.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 70,
+      "metadata": {}
+    },
+    {
+      "id": "api-00056",
+      "text": "For binary file content (e.g., PDF) that appears as hex strings like 'binary:aa6b3b2254...', attempt to extract readable patterns by searching for known substring patterns (e.g., 'Total Amount =>') within the binary string using string methods like `content.find()` or regular expressions. If the substring exists, extract the amount using the same parsing logic as for text files. If no pattern is found, then conclude the file is truly unreadable.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 96,
+      "metadata": {}
+    },
+    {
+      "id": "api-00063",
+      "text": "For tasks filtering songs by release date (e.g., 'released before 2021'), always use the show_song API to get individual song release_date field. The release_date is authoritative; do not infer from album-level release dates or other sources. Parse the release_date string and compare the year component to the target year.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 65,
+      "metadata": {}
+    },
+    {
+      "id": "api-00070",
+      "text": "For Spotify's create_playlist API: after creating a playlist, always check its contents via show_playlist, as some implementations may automatically populate the playlist with songs from the user's library. This behavior can affect duration calculations and eliminate the need to manually add songs if the library already contains sufficient content.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 58,
+      "metadata": {}
+    },
+    {
+      "id": "api-00075",
+      "text": "For file system's compress_directory API: (1) The compressed_file_path parameter should include extension (.tar or .zip) as per task requirements. (2) Use delete_directory=True to delete source directory after compression, which achieves both compression and deletion in one call. (3) Use overwrite=True to ensure compression succeeds even if compressed file already exists; this is safer than default false which could fail. (4) Directory paths can be relative (~/photos/) or absolute (/home/jason/photos/); use appropriate format based on task specification.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 110,
+      "metadata": {}
+    },
+    {
+      "id": "api-00077",
+      "text": "For file system tasks requiring sub-directory names extraction: Use `show_directory` with entry_type='directories' to list sub-directories, then parse the vacation spot name from each path (e.g., using path.split('/')[-1] or os.path.basename). This ensures dynamic identification of target directories, avoiding hard-coded assumptions.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 64,
+      "metadata": {}
+    },
+    {
+      "id": "api-00079",
+      "text": "For Spotify's show_recommendations API: The API returns a list of song objects each containing song_id, title, album_id, album_title, duration, and artists. To filter recommendations by genre and release year, you must fetch each song's details via show_song API to get genre and release_date fields. The show_recommendations API does not include genre or release_date fields.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 76,
+      "metadata": {}
+    },
+    {
+      "id": "api-00083",
+      "text": "For Spotify's show_song_queue API: Songs include position (integer) indicating their order in queue, and is_current/is_playing fields indicating which song is currently playing. Use these fields to determine 'played so far' songs: all songs with position ≤ current song's position have been played (or are currently playing).",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 63,
+      "metadata": {}
+    },
+    {
+      "id": "api-00088",
+      "text": "For phone message deletion tasks: Use phone_number parameter in search_text_messages and search_voice_messages APIs to filter messages from specific contacts. Both APIs support pagination via page_index; loop through all pages to collect all IDs. Note that search APIs return text_message_id and voice_message_id fields respectively, which are required parameters for delete_text_message and delete_voice_message APIs.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 72,
+      "metadata": {}
+    },
+    {
+      "id": "api-00091",
+      "text": "For Spotify's search_artists API, the genre and min_follower_count parameters can be used together to directly filter artists by both criteria. This is more efficient than fetching all artists and filtering manually. The API returns artists matching both conditions with pagination support.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 51,
+      "metadata": {}
+    },
+    {
+      "id": "api-00103",
+      "text": "For Spotify tasks involving playlist durations: use show_playlist_library to get all playlists, show_playlist to get songs in each playlist, and show_song to get song duration. Song duration is in seconds; convert to minutes by dividing by 60. Round to nearest integer using Python's round() function.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 59,
+      "metadata": {}
+    },
+    {
+      "id": "api-00104",
+      "text": "For tasks requiring playlist durations: show_playlist_library returns song_ids directly for each playlist, allowing you to fetch song durations without first calling show_playlist. This reduces API calls compared to fetching playlist details first, then fetching songs.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 44,
+      "metadata": {}
+    },
+    {
+      "id": "api-00110",
+      "text": "For Venmo tasks involving relationship categories like 'friends', 'roommates', or 'coworkers' (when identifying people to filter transactions/requests), use Phone's search_contacts with relationship parameter as the authoritative source. Venmo's search_friends API identifies Venmo platform friendships which may differ from Phone contacts; use Phone contacts when the task references relationship categories (friend, roommate, coworker) rather than Venmo-specific friendships.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 86,
+      "metadata": {}
+    },
+    {
+      "id": "api-00116",
+      "text": "For Spotify's search_songs API: check whether play_count is included in the response schema before deciding whether to call show_song for each song. If search_songs includes play_count field, use it directly to avoid unnecessary show_song calls. This reduces API calls and improves performance.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 56,
+      "metadata": {}
+    },
+    {
+      "id": "api-00118",
+      "text": "When extracting artist IDs from liked songs via `show_liked_songs`, note that the 'artists' field includes ALL artists associated with the song (contributors, co-artists, etc.), not just the primary artist. For tasks requiring identification of artists who have 'sung' or 'contributed' to liked songs, this comprehensive list ensures correct filtering of followed artists who have any association with liked songs.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 82,
+      "metadata": {}
+    },
+    {
+      "id": "api-00123",
+      "text": "For Spotify's show_song_library API: the API returns songs with song_id, title, album_id, album_title, duration, artists, and added_at fields, but does not include play_count or like_count. Therefore, tasks requiring play_count or like_count for library songs must fetch each song individually via show_song API to obtain those metrics. However, for other collection APIs (e.g., search_songs), check the response schema to see if they include play_count.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 95,
+      "metadata": {}
+    },
+    {
+      "id": "api-00126",
+      "text": "For Spotify's show_song_reviews API: when checking if you have reviewed a song, use the user_email parameter with your email address (e.g., 'jes.mill@gmail.com') to filter reviews to only your own. This avoids fetching all reviews for the song and simplifies identifying your own review.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 61,
+      "metadata": {}
+    },
+    {
+      "id": "api-00127",
+      "text": "For Venmo's show_social_feed API: note that it does NOT support date filtering parameters (min_created_at, max_created_at) unlike show_transactions. When filtering social feed transactions by date (e.g., 'yesterday'), you must fetch all transactions with pagination and filter client-side by parsing the created_at field (YYYY-MM-DDTHH:MM:SS format). Extract the date portion (created_at[0:10]) for comparison. This is different from show_transactions which supports server-side date filtering via min_created_at/max_created_at parameters.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 111,
+      "metadata": {}
+    },
+    {
+      "id": "api-00131",
+      "text": "For Spotify's show_album API: when fetching songs from an album, note that the response contains a 'songs' field (array of objects) rather than 'song_ids' (array of integers). Each song object in the 'songs' array has an 'id' field containing the song ID. This differs from the show_album_library API response schema which shows 'song_ids' directly. Always check the actual response structure of show_album before accessing song IDs to avoid KeyErrors.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 96,
+      "metadata": {}
+    },
+    {
+      "id": "api-00141",
+      "text": "For Spotify's show_song API: the release_date field is returned in ISO 8601 format (YYYY-MM-DDTHH:MM:SS), which can be parsed directly using datetime.fromisoformat(). This ensures correct date comparison when finding newest/oldest songs across libraries.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 56,
+      "metadata": {}
+    },
+    {
+      "id": "api-00145",
+      "text": "For Spotify's show_song API: the 'artists' field includes all artists associated with the song (primary artists, collaborators, contributors). When extracting artists to follow, you should consider all artists in this list, not just the first or primary artist.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 50,
+      "metadata": {}
+    },
+    {
+      "id": "api-00149",
+      "text": "When `show_file` returns 'binary:' followed by a short hex string (e.g., 'binary:77540af4ea...') for PDF files, this indicates the API is returning only a file identifier rather than parsed content. PDF files cannot be read via this API. In such cases, extraction of text content from PDFs is impossible; you should rely on alternative readable formats (e.g., TXT counterparts) or note the limitation in your answer.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 93,
+      "metadata": {}
+    },
+    {
+      "id": "api-00171",
+      "text": "For parsing bill amounts from text files in the file system, look for patterns like 'Total Amount => $' or 'Total: $' to extract the numeric value. Use string methods like find() or regex to locate the pattern and extract the amount. This approach works for standard bill receipt formats.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 60,
+      "metadata": {}
+    },
+    {
+      "id": "api-00183",
+      "text": "For Spotify's play_music API: after playing a song, verify playback success by calling show_current_song to confirm the correct song is playing. This is important when tasks require playing a specific song (e.g., most listened song from an album).",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 49,
+      "metadata": {}
+    },
+    {
+      "id": "code-00021",
+      "text": "For CSV formatting tasks where standard libraries are restricted and specific formatting is required (e.g., artists separated by '|'), manually construct CSV lines: escape quotes by doubling them, wrap fields in quotes if they contain commas or quotes, and join lists with the specified separator (e.g., artist_names = [artist['name'] for artist in song_info['artists']; artists_str = '|'.join(artist_names)).",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "USEFUL CODE SNIPPETS AND TEMPLATES",
+      "token_length": 81,
+      "metadata": {}
+    },
+    {
+      "id": "cms-00009",
+      "text": "When finding maximum/minimum values across large datasets: track the maximum value during iteration instead of storing all data, use sets to handle duplicate IDs from multiple sources, and verify edge cases like ties if the task semantics require returning all or asking for clarification.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 50,
+      "metadata": {}
+    },
+    {
+      "id": "cms-00010",
+      "text": "For tasks that involve finding unique items from multiple collections (like songs from multiple playlists): always use a set to collect IDs to avoid processing duplicates multiple times, which improves efficiency and prevents incorrect counting.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 39,
+      "metadata": {}
+    },
+    {
+      "id": "cms-00028",
+      "text": "Before executing code, proofread for syntax errors (like misplaced semicolons, missing parentheses, or incorrect variable names). Simple syntax errors can cause execution failures even when the overall logic is correct. Always review code blocks before running them, especially when copying or modifying existing code patterns.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 56,
+      "metadata": {}
+    },
+    {
+      "id": "cms-00033",
+      "text": "When computing results across multiple data sources (e.g., song, album, playlist libraries), ensure you have gathered data from all explicitly mentioned sources before finalizing the answer. Avoid redundant rechecks after a valid result has been computed; trust the comprehensive collection process.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 52,
+      "metadata": {}
+    },
+    {
+      "id": "cms-00042",
+      "text": "When checking Venmo transactions to determine who has paid for a shared expense, ensure you verify both sender names AND transaction amounts against the note entries. Transactions with matching descriptions but incorrect amounts should not count as payments received. Also check for duplicate payments where someone might have sent multiple transactions.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 56,
+      "metadata": {}
+    },
+    {
+      "id": "cms-00066",
+      "text": "During verification steps, using incorrect field names (e.g., assuming 'playlist_order' instead of 'playlist_id') can cause KeyErrors and disrupt verification. Always reference the actual field names used earlier in data collection or check API documentation again. This ensures consistency between data collection and verification phases.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 58,
+      "metadata": {}
+    },
+    {
+      "id": "cms-00089",
+      "text": "When writing Python code in REPL environments, avoid mixing commentary with assignment statements in the same line. Use separate comment lines prefixed with # (e.g., '# applying the same approach as for text messages') rather than writing explanatory text as part of the assignment statement. This prevents syntax errors and keeps code lines clean and executable.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 64,
+      "metadata": {}
+    },
+    {
+      "id": "cms-00113",
+      "text": "When writing verification code after batch operations, always proofread variable assignments to avoid syntax errors from keyboard slips or mixed languages. Use consistent English variable names and avoid accidentally typing non-English characters. Always review code before execution, especially verification steps where errors can falsely indicate incomplete task completion.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 56,
+      "metadata": {}
+    },
+    {
+      "id": "cms-00150",
+      "text": "When summing costs from files where some files are PDFs returning only 'binary:' identifiers via show_file API, do not assume you can extract amounts from those PDFs. Instead, sum only amounts from readable formats (TXT) and note in the answer which months were excluded due to unreadable PDF format. This ensures accurate reporting of what can be calculated versus what is missing.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 76,
+      "metadata": {}
+    },
+    {
+      "id": "cms-00179",
+      "text": "When typing variable assignments or numeric values in code, always use standard ASCII characters (hyphen-minus '-', not en dash '–' or em dash '—'). Special Unicode characters can cause syntax errors that are hard to spot. Proofread code for such characters, especially when copying from external sources or typing manually.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 62,
+      "metadata": {}
+    },
+    {
+      "id": "psw-00002",
+      "text": "Remember you can use the variables in your code in subsequent code blocks.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "PROBLEM-SOLVING HEURISTICS AND WORKFLOWS",
+      "token_length": 14,
+      "metadata": {}
+    },
+    {
+      "id": "psw-00007",
+      "text": "Many APIs return items in \"pages\". Make sure to run through all the pages by looping over `page_index`.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "PROBLEM-SOLVING HEURISTICS AND WORKFLOWS",
+      "token_length": 23,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00014",
+      "text": "Before calling an API, verify all required parameters from the specification, even if some appear optional in practice (e.g., access_token might not be required for certain APIs but checking prevents potential errors).",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 39,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00016",
+      "text": "After performing batch updates, verify the final state by fetching the updated data (e.g., using `show_song_reviews`) to confirm that all target items now meet the required condition (e.g., all liked songs have 5-star ratings). This ensures the task is fully completed and prevents partial successes.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 60,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00025",
+      "text": "When filtering data by date ranges (e.g., 'last N days including today'), verify the calculation: min_date = today - timedelta(days=N-1). For example, 'last 5 days including today' => min_date = today - timedelta(days=4). After applying the filter, check the actual returned data to ensure it matches the expected date range; if dates are outside the range, adjust the calculation accordingly.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 85,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00027",
+      "text": "When performing batch operations on Venmo transactions (e.g., adding comments or likes), verify the final state by fetching updated transaction details (using show_transaction) and checking fields like comment_count and like_count. This ensures all target transactions have been properly updated and prevents partial successes.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 55,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00031",
+      "text": "When paginating through APIs to collect all data, verify completeness by ensuring the loop terminates when the API returns an empty list (or no results). After collection, confirm total items collected align with expectations (e.g., total recommendations > 0) to ensure no pages were missed.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 56,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00034",
+      "text": "Before finalizing an answer that depends on data from multiple sources, verify that you have collected from all sources mentioned in the task (e.g., song, album, playlist libraries). Cross-check the list of sources against your data collection to ensure completeness.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 50,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00037",
+      "text": "When finding the 'newest' or 'most recent' item by date: after identifying the item with maximum date, verify by checking top N candidates (e.g., sorted list) to ensure no ties exist and confirm the result matches expectations.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 49,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00039",
+      "text": "When interpreting 'yesterday' or similar date references in tasks involving notes or transactions, verify note creation dates align with task context. Check if multiple notes exist with similar content; choose the most recent one that matches the date range. If ambiguous, examine note content for additional clues (e.g., event names, amounts) to determine correctness.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 68,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00040",
+      "text": "When checking Venmo transactions to determine who has already paid for a shared expense, verify transaction amounts match the amounts recorded in the note. Filter transactions by date range (e.g., 'yesterday'), description matching the expense, and cross-check sender names and amounts with note entries to ensure accurate identification of paid/unpaid individuals.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 65,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00046",
+      "text": "When filtering by fixed dates (e.g., 'since Jan 1st of this year'), ensure date comparison uses YYYY-MM-DD format. Verify that the filter is applied correctly by checking transaction dates. If no transactions match the date range, return 0 as the answer. Always use the authoritative source (Phone contacts) for relationship identification, not transaction descriptions.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 72,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00047",
+      "text": "When filtering by dates relative to 'this year' (e.g., 'since 1st Feb of this year') and receiving 0 results, verify the current date to ensure you're using the correct year. Use `apis.phone.get_current_date_and_time()` to get the current year, then adjust the date filter accordingly. This prevents incorrect assumptions about the year when the system date differs from expectations.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 81,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00051",
+      "text": "After performing batch follow/unfollow operations on artists (or similar entities), verify the final state by checking follow status for each target artist using APIs like `show_artist_following`. This ensures all target artists have been successfully followed/unfollowed and prevents partial successes.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 52,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00055",
+      "text": "When summing costs from multiple files (e.g., monthly bills), verify that you have accounted for all months in the specified period. If some months have only PDF files (binary) and no txt counterparts, note this limitation and consider if the task expects you to read PDFs (if possible) or only use readable formats.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 66,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00057",
+      "text": "When summing costs from multiple files across a period (e.g., 'this year'), verify you have accounted for all months in the period, even if some months have binary/unreadable files. If binary files exist (e.g., PDFs), attempt to extract amounts by searching for known patterns (e.g., 'Total Amount =>') within the binary content. If extraction fails, note the limitation and sum only readable files, but mention missing months in the answer.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 95,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00059",
+      "text": "When parsing structured content from notes or messages, verify parsing logic by testing on a small subset (first few entries) and comparing extracted data with manual inspection of raw content. If parsing fails, re-examine raw format and adjust splitting strategy (e.g., change from line-by-line state tracking to delimiter-based splitting).",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 63,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00064",
+      "text": "After performing batch removals from both library and playlists, verify the final state by re-fetching library songs and playlist songs and checking each song's condition (e.g., release date). Ensure no songs meeting the removal condition remain in either collection. This ensures the task is fully completed and prevents partial removal.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 61,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00069",
+      "text": "After creating a playlist to meet a time-based requirement, verify the total duration by fetching each song's duration via show_song API and summing them. Ensure the total duration exceeds the required workout time before playing the playlist. This prevents starting a playlist that might run out before the workout ends.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 58,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00073",
+      "text": "Before calling verification APIs (e.g., file_exists, directory_exists, show_file), always check API documentation to verify parameter names. Verification APIs often use different parameter names (e.g., 'file_path' vs 'directory_path' vs 'path') than other APIs in the same app. Skipping documentation check for 'simple' verification APIs can lead to validation errors.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 73,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00080",
+      "text": "After creating a playlist with filtered songs (e.g., by genre and release year), verify that each song in the playlist matches the filtering criteria by checking their genre and release_date via show_song. This ensures that no incorrect songs were added due to filtering errors or API limitations.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 55,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00084",
+      "text": "For Spotify queue tasks requiring liking songs played so far, after identifying songs with position ≤ current_position, verify that all identified songs are liked by checking liked_songs_ids via show_liked_songs. If any song is not liked, execute the like_song operation. Even if all songs are already liked, confirm that the task condition is satisfied by verifying the intersection between identified songs and liked songs.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 79,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00086",
+      "text": "After sending a refund transaction for an accidentally approved payment request, verify the transaction was successful by checking show_transactions or show_transaction for the newly created transaction_id. Confirm the transaction has the correct amount, receiver, and description matching the refund intent.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 48,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00092",
+      "text": "When filtering artists by genre using API parameters, first check the available genre list via show_genres to understand if the genre exists as a standalone category or is part of compound genres. If the target genre appears as a standalone entry (e.g., 'reggae'), trust the API's genre parameter; if it appears as part of compound genres (e.g., 'R&B' appears as 'R&B' and 'Rhythm & Blues'), consider using substring filtering with query parameter or post-filtering.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 101,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00094",
+      "text": "When sending payment requests for shared expenses, always check existing Venmo transactions from recipients (using relationship filtering and date/description matching) to avoid duplicate requests, even if the task doesn't explicitly require it. This prevents requesting money from people who have already paid.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 52,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00096",
+      "text": "Before sending payment requests for shared expenses, verify that the share calculation correctly excludes the payer (you) from the divisor. Check: total_amount should be divided by number_of_recipients (roommates only), not total_party_size (roommates + you). This ensures you request the correct amount from each roommate.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 62,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00099",
+      "text": "After updating a checklist item in a note, verify the update by re-fetching the note and checking that the specific line has been changed correctly (e.g., '[ ]' → '[x]') and that no other lines were inadvertently modified. Ensure the update preserves the note's overall structure and formatting.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 61,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00101",
+      "text": "After updating alarms (moving time or changing enabled status), verify the final state by fetching all alarms again and checking: (1) Target alarm's time matches expected value, (2) Target alarm remains enabled (if required), (3) All other alarms are disabled (if required). Ensure verification includes pagination to capture all alarms.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 66,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00105",
+      "text": "When rounding durations to nearest integer for tasks requiring minutes, ensure you convert seconds to minutes by dividing by 60 and then apply Python's round() function, which rounds to the nearest integer (e.g., 24.25 → 24, 24.5 → 25). Verify rounding by checking intermediate values if needed.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 66,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00108",
+      "text": "Before calling verification APIs (e.g., show_current_song, show_song_reviews, etc.), check API documentation to confirm if they require authentication parameters like access_token. Even simple 'show' APIs may require authentication, and skipping this can lead to 401 errors.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 52,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00119",
+      "text": "After performing batch unfollow/follow operations on artists, verify by fetching the updated followed artists list and checking that: (1) all target artists to unfollow are no longer in the list, and (2) all artists that should remain followed (e.g., those with liked songs) are still present. This ensures the operation successfully removed the unwanted artists while preserving desired artists.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 76,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00121",
+      "text": "When finding the 'most-liked' or similar maximum/minimum across collections, after identifying the candidate, verify ties by checking if any other items have the same metric value. This ensures you return the correct single item when there are no ties, and helps identify edge cases when multiple items share the maximum/minimum.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 63,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00129",
+      "text": "After performing batch 'like' operations on Venmo transactions, verify the final state by fetching each transaction's details via show_transaction and checking that like_count > 0. This ensures all target transactions have been liked without needing to parse API response messages or re-attempt operations.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 55,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00132",
+      "text": "When extracting data from parsed content (e.g., movie titles from notes), verify that the extracted data matches the task requirements before taking action. For example, after parsing movie recommendations and filtering for specific director movies, check that: (1) the extracted titles are correct (match the titles in the raw content), (2) the filtering criteria (e.g., director name) is correctly applied, and (3) the number of extracted items is reasonable (not empty when expected, not too many when filtering). This prevents sending incorrect or empty responses.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 110,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00134",
+      "text": "After parsing structured content (e.g., movie titles from notes), verify the extracted data by: (1) checking that the number of extracted items is reasonable (not zero when content clearly contains matches), (2) manually inspecting a few extracted items against the raw content to ensure correctness, (3) confirming that filtering criteria (e.g., director name) are correctly applied. If verification fails, re-examine the raw format and adjust parsing strategy immediately rather than persisting with the same approach.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 100,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00137",
+      "text": "After processing batch operations on Venmo transactions (comments, likes), verify completeness by fetching all transactions within the date range without per-contact filtering, then checking that all transactions from the target contacts have been processed. This ensures no transactions were missed due to pagination limits or filtering approach.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 55,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00146",
+      "text": "After following artists of genre-filtered songs, verify that all artist IDs extracted from those songs are now in the followed list by checking each artist individually via show_following_artists or comparing sets. This ensures completeness even when some artists were already followed before the operation.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 53,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00148",
+      "text": "After following artists of genre-filtered songs, verify that all artist IDs from the filtered songs are now in the followed list by comparing sets: ensure set(artist_ids_to_follow) ⊆ set(followed_artist_ids). This ensures completeness even when some artists were already followed before the operation.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 58,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00151",
+      "text": "When calculating totals from files across a time period (e.g., 'this year'), verify that you have accounted for all months/dates in the period. Create a list of all expected time segments (e.g., months Jan-Dec for 'this year'), check which segments have readable files, and explicitly note segments with missing or unreadable files in your final answer. This ensures transparency about completeness and prevents reporting incomplete totals as if they were complete.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 89,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00152",
+      "text": "For file system tasks involving moving files to sub-directories, verify the parent directory is empty by using show_directory with recursive=False to check only files directly in the directory, not those in sub-directories. This ensures accurate verification that files have been successfully moved.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 52,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00157",
+      "text": "For workout playlist tasks: after creating a playlist to meet a time-based requirement, verify the total duration exceeds the workout requirement by at least a small margin (e.g., 5-10 minutes) to account for potential timing variations. This ensures you won't run out of music during the workout even if some songs are shorter than expected or if the workout runs slightly longer.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 75,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00164",
+      "text": "For Venmo refund tasks where you need to refund the 'last' approved payment request: after identifying the most recent approved request by sorting all collected requests by created_at descending, verify it is indeed the most recent by checking that no other approved requests have a later created_at date. This ensures you refund the correct request on the first attempt, avoiding redundant transactions.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 72,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00166",
+      "text": "For tasks requiring following artists meeting specific criteria (genre, follower count), after following the artists identified through search, verify completeness by checking all artists (via paginated search without filters) to ensure no qualifying artists were missed due to search limitations or incomplete pagination. This ensures the task is fully completed even if the initial search results were incomplete.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 67,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00167",
+      "text": "For tasks involving filtering by numeric thresholds (e.g., follower count, play_count, like_count) where you use API parameters for server-side filtering, after completing the operation, verify completeness by performing a broader search without the numeric filter to collect all items in the category, then client-side filter by the threshold. This ensures no qualifying items were missed due to API limitations or incomplete pagination.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 77,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00172",
+      "text": "After sending payment requests for shared expenses, verify creation by fetching sent payment requests with pagination and checking that requests with the expected description and amounts exist for all intended recipients. This ensures no requests were missed due to API errors or network issues.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 47,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00174",
+      "text": "After parsing structured content from notes or messages, verify the extracted data by checking that the number of extracted items is reasonable (not zero when content clearly contains matches). If parsing yields empty results, immediately re-examine the raw format and adjust parsing strategy rather than proceeding with empty data. This prevents sending incorrect or empty responses based on flawed parsing.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 68,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00182",
+      "text": "After playing a song via play_music API (e.g., the most listened song from an album), verify playback by calling show_current_song API and checking that the song_id matches the intended song. This ensures the playback operation succeeded and the correct song is playing.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 52,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00185",
+      "text": "After rejecting/approving pending Venmo payment requests from specific relationship groups, verify completion by re-fetching all pending payment requests and checking that none remain from the target contacts. Filter by sender email matching the combined contact emails to confirm zero remaining requests. This ensures the batch operation was fully successful and no requests were missed.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 64,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00191",
+      "text": "After performing batch follow operations on artists derived from a source set (e.g., artists from liked songs), verify completeness by checking that the source artist IDs are a subset of the updated followed artist IDs using set operations: ensure set(source_artist_ids) ⊆ set(updated_followed_artist_ids). This provides a robust mathematical verification that all required artists are now followed.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 72,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00193",
+      "text": "After finding the 'most-liked' or similar maximum/minimum song across playlists, verify ties by checking if any other songs have the same metric value. If ties exist and the task asks for a singular answer (e.g., 'the title'), you may return any of the tied songs, but ensure your algorithm correctly handles ties by either returning the first encountered or explicitly noting the tie. This prevents incorrect results when multiple songs share the maximum/minimum value.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 92,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00196",
+      "text": "After performing batch operations (like liking transactions) on specific identified items, verify success efficiently by fetching only those items individually using APIs that accept transaction IDs (e.g., show_transaction). This avoids re-fetching entire collections (like social feed) which can be inefficient, especially when dealing with large datasets. For Venmo transactions, use show_transaction with each transaction_id to check final state metrics (like_count, comment_count).",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 84,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00199",
+      "text": "Before performing irreversible actions (e.g., account termination, mass deletions), verify that backup files or critical outputs have been successfully created. Use file_exists or directory_exists APIs to confirm file existence before proceeding with destructive operations. This ensures the irreversible action only occurs after successful backup confirmation.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 56,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00200",
+      "text": "For backup/export tasks creating CSV files: after creating the CSV file, verify that the file contains the expected number of rows (excluding header) matching the count of unique items collected. Use file_system APIs to read the file and count lines, ensuring all items were written correctly. This ensures backup completeness before performing irreversible actions.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 64,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00201",
+      "text": "After creating CSV files with specific formatting requirements (e.g., artists separated by '|'), verify the formatting by reading a few lines and checking that artists are correctly joined with the specified separator. Ensure quotes are properly escaped and fields are formatted as expected. This prevents incorrect formatting that could render the backup unusable.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 61,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00203",
+      "text": "For backup/export tasks collecting data from multiple sources (e.g., song library, album library, playlists), verify that each source contributed songs by tracking counts per source (e.g., song library count, album song count, playlist song count) before union. This ensures completeness and confirms that data collection from all specified sources was successful.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 66,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00204",
+      "text": "After parsing structured content from notes or messages, verify that the extracted data matches the task requirements before sending or using it. For example, when extracting movie titles from a note for a recommendation request, check that: (1) the extracted titles match the filtering criteria (e.g., director name), (2) the number of extracted items is reasonable (not zero when content clearly contains matches), (3) the titles are correctly formatted (no extra whitespace or formatting issues). This prevents sending incorrect or empty responses based on flawed parsing.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 106,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00206",
+      "text": "After parsing structured note content for movie recommendations (or similar multi-line entries), verify the extracted titles match the raw content by manually inspecting a few entries and checking that filtering criteria (e.g., director name) are correctly applied. Ensure the number of extracted items is reasonable (not zero when content clearly contains matches).",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 63,
+      "metadata": {}
+    },
+    {
+      "id": "vc-00208",
+      "text": "When finding 'most frequent' or 'least frequent' items (e.g., most recommended artist) by counting occurrences across API data, after identifying the item with maximum/minimum count, verify ties by checking if any other item has the same count. This ensures correct handling of ambiguous cases where multiple items share the highest/lowest frequency. If ties exist and the task expects a single answer, either return any of the tied items or note the tie explicitly.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 91,
+      "metadata": {}
+    },
+    {
+      "id": "ts-00023",
+      "text": "When parsing structured data (like notes, messages, lists) and initial parsing fails, re-examine the raw format closely to identify the exact pattern. Adjust parsing logic to match the observed structure—for example, if entries are separated by double newlines, split by delimiter rather than iterating lines with state tracking. Test parsing on a subset of data before applying to the entire dataset.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "TROUBLESHOOTING AND PITFALLS",
+      "token_length": 75,
+      "metadata": {}
+    },
+    {
+      "id": "ts-00024",
+      "text": "When parsing structured content with clear delimiters between entries (e.g., double newlines in notes), use delimiter-based splitting instead of line-by-line state tracking. This approach is more reliable and simpler for patterns where entries are separated by consistent delimiters.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "TROUBLESHOOTING AND PITFALLS",
+      "token_length": 50,
+      "metadata": {}
+    },
+    {
+      "id": "misc-00003",
+      "text": "Remember that the email addresses, access tokens and variables (e.g. spotify_password) in the example above are not valid anymore.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "OTHERS",
+      "token_length": 26,
+      "metadata": {}
+    },
+    {
+      "id": "misc-00008",
+      "text": "Once you have completed the task, make sure to call apis.supervisor.complete_task(). If the task asked for some information, return it as the answer argument, i.e. call apis.supervisor.complete_task(answer=<answer>). Many tasks do not require an answer, so in those cases, just call apis.supervisor.complete_task() i.e. do not pass any argument.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "OTHERS",
+      "token_length": 75,
+      "metadata": {}
+    },
+    {
+      "id": "dummy-00001",
+      "text": "Always taste your dish at multiple stages of cooking. This practice allows you to adjust seasoning and flavors progressively, ensuring a balanced final result that meets your desired profile.",
+      "source": "dummy",
+      "domain": "cooking",
+      "section": "DUMMY_INSIGHTS",
+      "token_length": 32,
+      "metadata": {
+        "target_tokens": 67,
+        "attempts": 1
+      }
+    },
+    {
+      "id": "dummy-00002",
+      "text": "In sports coaching, prioritize individual skill assessments during practice sessions. Tailored feedback enhances player development by addressing specific strengths and weaknesses, leading to more effective training outcomes.",
+      "source": "dummy",
+      "domain": "sports_coaching",
+      "section": "DUMMY_INSIGHTS",
+      "token_length": 32,
+      "metadata": {
+        "target_tokens": 87,
+        "attempts": 2
+      }
+    },
+    {
+      "id": "dummy-00003",
+      "text": "Automate savings transfers to a separate account immediately after each paycheck. This strategy reduces the temptation to spend excess funds and ensures consistent progress toward financial goals without requiring ongoing willpower.",
+      "source": "dummy",
+      "domain": "personal_finance",
+      "section": "DUMMY_INSIGHTS",
+      "token_length": 35,
+      "metadata": {
+        "target_tokens": 87,
+        "attempts": 3
+      }
+    }
+  ],
+  "config": {
+    "from_file": "/home/bwoo/workspace/ace-appworld/experiments/runs/ACE_offline_5epoch/playbooks/trained_playbook_snapshot_200.txt",
+    "append_dummies": 3,
+    "dummy_domains": [
+      "cooking",
+      "sports_coaching",
+      "personal_finance",
+      "general_health",
+      "home_gardening",
+      "music_practice"
+    ],
+    "judge_model": "openai/gpt-4o-mini",
+    "judge_provider": "openrouter",
+    "seed": 100
+  },
+  "config_hash": "d42a03838c2a88db1d56fca45e868dd31b9e7023c697ea3f54d0b29f54f75251",
+  "created_at": "2026-04-25T06:04:45.226757Z",
+  "stats": {
+    "n_total": 211,
+    "n_real": 208,
+    "n_dummies": 3,
+    "token_distribution_real": {
+      "mean": 79.36057692307692,
+      "p25": 58,
+      "p50": 73,
+      "p75": 99,
+      "min": 14,
+      "max": 173,
+      "n": 208
+    }
+  }
+}

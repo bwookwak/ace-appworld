@@ -1,0 +1,205 @@
+{
+  "per_task": {
+    "50e1ac9_1": {
+      "success": 1,
+      "step_count": 17,
+      "cost_usd": 0.01,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/50e1ac9_1/logs/lm_calls.jsonl"
+    },
+    "50e1ac9_2": {
+      "success": 1,
+      "step_count": 17,
+      "cost_usd": 0.02,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/50e1ac9_2/logs/lm_calls.jsonl"
+    },
+    "50e1ac9_3": {
+      "success": 1,
+      "step_count": 18,
+      "cost_usd": 0.03,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/50e1ac9_3/logs/lm_calls.jsonl"
+    },
+    "fac291d_1": {
+      "success": 1,
+      "step_count": 14,
+      "cost_usd": 0.04,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/fac291d_1/logs/lm_calls.jsonl"
+    },
+    "fac291d_2": {
+      "success": 1,
+      "step_count": 14,
+      "cost_usd": 0.04,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/fac291d_2/logs/lm_calls.jsonl"
+    },
+    "fac291d_3": {
+      "success": 1,
+      "step_count": 14,
+      "cost_usd": 0.05,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/fac291d_3/logs/lm_calls.jsonl"
+    },
+    "530b157_1": {
+      "success": 0,
+      "step_count": 17,
+      "cost_usd": 0.06,
+      "num_passed": 9,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/530b157_1/logs/lm_calls.jsonl"
+    },
+    "530b157_2": {
+      "success": 1,
+      "step_count": 17,
+      "cost_usd": 0.07,
+      "num_passed": 10,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/530b157_2/logs/lm_calls.jsonl"
+    },
+    "530b157_3": {
+      "success": 0,
+      "step_count": 16,
+      "cost_usd": 0.08,
+      "num_passed": 9,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/530b157_3/logs/lm_calls.jsonl"
+    },
+    "4ec8de5_1": {
+      "success": 1,
+      "step_count": 22,
+      "cost_usd": 0.09,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/4ec8de5_1/logs/lm_calls.jsonl"
+    },
+    "4ec8de5_2": {
+      "success": 1,
+      "step_count": 15,
+      "cost_usd": 0.09,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/4ec8de5_2/logs/lm_calls.jsonl"
+    },
+    "4ec8de5_3": {
+      "success": 0,
+      "step_count": 19,
+      "cost_usd": 0.11,
+      "num_passed": 1,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/4ec8de5_3/logs/lm_calls.jsonl"
+    },
+    "b119b1f_1": {
+      "success": 1,
+      "step_count": 8,
+      "cost_usd": 0.11,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/b119b1f_1/logs/lm_calls.jsonl"
+    },
+    "b119b1f_2": {
+      "success": 1,
+      "step_count": 8,
+      "cost_usd": 0.12,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/b119b1f_2/logs/lm_calls.jsonl"
+    },
+    "b119b1f_3": {
+      "success": 1,
+      "step_count": 15,
+      "cost_usd": 0.13,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/b119b1f_3/logs/lm_calls.jsonl"
+    },
+    "d4e9306_1": {
+      "success": 1,
+      "step_count": 12,
+      "cost_usd": 0.13,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/d4e9306_1/logs/lm_calls.jsonl"
+    },
+    "d4e9306_2": {
+      "success": 1,
+      "step_count": 15,
+      "cost_usd": 0.14,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/d4e9306_2/logs/lm_calls.jsonl"
+    },
+    "d4e9306_3": {
+      "success": 1,
+      "step_count": 18,
+      "cost_usd": 0.15,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/d4e9306_3/logs/lm_calls.jsonl"
+    },
+    "0d8a4ee_1": {
+      "success": 0,
+      "step_count": 9,
+      "cost_usd": 0.15,
+      "num_passed": 4,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/0d8a4ee_1/logs/lm_calls.jsonl"
+    },
+    "0d8a4ee_2": {
+      "success": 1,
+      "step_count": 15,
+      "cost_usd": 0.16,
+      "num_passed": 5,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_test_run_parallel_stage1/tasks/0d8a4ee_2/logs/lm_calls.jsonl"
+    }
+  },
+  "aggregate": {
+    "n_tasks": 20,
+    "n_ran": 20,
+    "n_success": 16,
+    "success_rate": 0.8,
+    "mean_steps": 15.0,
+    "total_cost_usd": 1.78
+  },
+  "config": {
+    "tasks_dataset": "dev",
+    "sample_size": 20,
+    "task_ids_csv": null,
+    "resolved_task_ids": [
+      "50e1ac9_1",
+      "50e1ac9_2",
+      "50e1ac9_3",
+      "fac291d_1",
+      "fac291d_2",
+      "fac291d_3",
+      "530b157_1",
+      "530b157_2",
+      "530b157_3",
+      "4ec8de5_1",
+      "4ec8de5_2",
+      "4ec8de5_3",
+      "b119b1f_1",
+      "b119b1f_2",
+      "b119b1f_3",
+      "d4e9306_1",
+      "d4e9306_2",
+      "d4e9306_3",
+      "0d8a4ee_1",
+      "0d8a4ee_2"
+    ],
+    "baseline_playbook": "/home/bwoo/workspace/ace-appworld/experiments/playbooks/appworld_initial_playbook.txt",
+    "experiment_name": "memutil_test_run_parallel_stage1"
+  },
+  "config_hash": "46afca92c6115d8fdeb4d6b53266d2d0e3f9fa5715634650408aed90ead8d77a",
+  "experiment_name": "memutil_test_run_parallel_stage1",
+  "created_at": "2026-04-24T10:50:10.435365Z",
+  "_rescore_note": "re-evaluated after evaluate_one_task bugfix; agent not re-run"
+}

@@ -1,0 +1,73 @@
+{
+  "per_step": [
+    {
+      "task_id": "50e1ac9_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "50e1ac9_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "50e1ac9_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004"
+      ],
+      "judge_ids": [
+        "api-00004"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "50e1ac9_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00006"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "fac291d_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "misc-00008"
+      ],
+      "judge_ids": [
+        "misc-00008"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "fac291d_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    }
+  ],
+  "global": {
+    "steps_evaluated": 6,
+    "jaccard_mean": 0.8333333333333334,
+    "global_jaccard": 0.8333333333333334
+  }
+}

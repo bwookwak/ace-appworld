@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "instrumented_summary.json",
+  "type": "object",
+  "required": ["per_task", "aggregate", "config", "config_hash"],
+  "properties": {
+    "per_task": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["success", "step_count"],
+        "properties": {
+          "success":          {"type": "integer", "enum": [0, 1]},
+          "step_count":       {"type": "integer"},
+          "cost_usd":         {"type": "number"},
+          "cited_count":      {"type": "integer"},
+          "judged_count":     {"type": "integer"},
+          "cited_insights":   {"type": "array", "items": {"type": "string"}},
+          "judged_insights":  {"type": "array", "items": {"type": "string"}},
+          "num_passed":       {"type": "integer"},
+          "num_failed":       {"type": "integer"},
+          "note":             {"type": "string"}
+        }
+      }
+    },
+    "aggregate":        {"type": "object"},
+    "config":           {"type": "object"},
+    "config_hash":      {"type": "string"},
+    "experiment_name":  {"type": "string"},
+    "created_at":       {"type": "string"}
+  }
+}

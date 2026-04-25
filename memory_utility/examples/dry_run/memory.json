@@ -1,0 +1,138 @@
+{
+  "insights": [
+    {
+      "id": "shr-00001",
+      "text": "Make sure to end code blocks with ``` followed by a newline(\\n).",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 15,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00005",
+      "text": "Always look at API specifications (using apis.api_docs.show_api_doc) before calling an API.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 19,
+      "metadata": {}
+    },
+    {
+      "id": "shr-00006",
+      "text": "Write small chunks of code and only one chunk of code in every step. Make sure everything is working correctly before making any irreversible change.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 27,
+      "metadata": {}
+    },
+    {
+      "id": "api-00004",
+      "text": "You can use the \"supervisor\" app to get information about my accounts and use the \"phone\" app to get information about friends and family.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 30,
+      "metadata": {}
+    },
+    {
+      "id": "psw-00002",
+      "text": "Remember you can use the variables in your code in subsequent code blocks.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "PROBLEM-SOLVING HEURISTICS AND WORKFLOWS",
+      "token_length": 14,
+      "metadata": {}
+    },
+    {
+      "id": "psw-00007",
+      "text": "Many APIs return items in \"pages\". Make sure to run through all the pages by looping over `page_index`.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "PROBLEM-SOLVING HEURISTICS AND WORKFLOWS",
+      "token_length": 23,
+      "metadata": {}
+    },
+    {
+      "id": "misc-00003",
+      "text": "Remember that the email addresses, access tokens and variables (e.g. spotify_password) in the example above are not valid anymore.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "OTHERS",
+      "token_length": 26,
+      "metadata": {}
+    },
+    {
+      "id": "misc-00008",
+      "text": "Once you have completed the task, make sure to call apis.supervisor.complete_task(). If the task asked for some information, return it as the answer argument, i.e. call apis.supervisor.complete_task(answer=<answer>). Many tasks do not require an answer, so in those cases, just call apis.supervisor.complete_task() i.e. do not pass any argument.",
+      "source": "provided",
+      "domain": "appworld",
+      "section": "OTHERS",
+      "token_length": 75,
+      "metadata": {}
+    },
+    {
+      "id": "dummy-00001",
+      "text": "When preparing stock from roasted bones, always simmer uncovered on low heat for at least 6 hours. Rushing the simmer at higher temperatures clouds the broth and breaks down collagen unevenly.",
+      "source": "dummy",
+      "domain": "cooking",
+      "section": "DUMMY_INSIGHTS",
+      "token_length": 45,
+      "metadata": {
+        "note": "hand-crafted example for snapshot; real Stage 0 would LLM-generate this"
+      }
+    },
+    {
+      "id": "dummy-00002",
+      "text": "Before any close-out drill in basketball practice, re-affirm defensive matchups verbally with players. Silent assignments fall apart in transition and concede uncontested threes.",
+      "source": "dummy",
+      "domain": "sports_coaching",
+      "section": "DUMMY_INSIGHTS",
+      "token_length": 30,
+      "metadata": {
+        "note": "hand-crafted example for snapshot; real Stage 0 would LLM-generate this"
+      }
+    },
+    {
+      "id": "dummy-00003",
+      "text": "For household budgeting, log variable expenses within 24 hours of the transaction. Delayed entries drift by 15-30% in recall, especially for cash purchases.",
+      "source": "dummy",
+      "domain": "personal_finance",
+      "section": "DUMMY_INSIGHTS",
+      "token_length": 28,
+      "metadata": {
+        "note": "hand-crafted example for snapshot; real Stage 0 would LLM-generate this"
+      }
+    }
+  ],
+  "config": {
+    "from_file": "experiments/playbooks/appworld_initial_playbook.txt",
+    "append_dummies": 3,
+    "dummy_domains": [
+      "cooking",
+      "sports_coaching",
+      "personal_finance"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "judge_provider": "openai",
+    "seed": 100,
+    "note": "SNAPSHOT DEMO: dummies hand-crafted rather than LLM-generated to avoid API spend"
+  },
+  "config_hash": "SNAPSHOT_DEMO_d956ffc45eacb995",
+  "created_at": "2026-04-23T17:14:05.752182Z",
+  "stats": {
+    "n_total": 11,
+    "n_real": 8,
+    "n_dummies": 3,
+    "token_distribution_real": {
+      "mean": 28.625,
+      "p25": 15,
+      "p50": 23,
+      "p75": 27,
+      "min": 14,
+      "max": 75,
+      "n": 8
+    }
+  }
+}

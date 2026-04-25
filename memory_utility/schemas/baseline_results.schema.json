@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "baseline_results.json",
+  "type": "object",
+  "required": ["per_task", "aggregate", "config", "config_hash"],
+  "properties": {
+    "per_task": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["success", "step_count"],
+        "properties": {
+          "success":          {"type": "integer", "enum": [0, 1]},
+          "step_count":       {"type": "integer"},
+          "cost_usd":         {"type": "number"},
+          "num_passed":       {"type": "integer"},
+          "num_failed":       {"type": "integer"},
+          "trajectory_path":  {"type": ["string", "null"]},
+          "note":             {"type": "string"}
+        }
+      }
+    },
+    "aggregate": {
+      "type": "object",
+      "properties": {
+        "n_tasks":        {"type": "integer"},
+        "n_ran":          {"type": "integer"},
+        "n_success":      {"type": "integer"},
+        "success_rate":   {"type": "number"},
+        "mean_steps":     {"type": "number"},
+        "total_cost_usd": {"type": "number"}
+      }
+    },
+    "config":           {"type": "object"},
+    "config_hash":      {"type": "string"},
+    "experiment_name":  {"type": "string"},
+    "created_at":       {"type": "string"}
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "per_insight": {
+    "shr-00001": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 15,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00005": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 19,
+      "reference_count_total": 3,
+      "reference_count_by_task": {
+        "50e1ac9_1": 1,
+        "50e1ac9_2": 1,
+        "fac291d_2": 1
+      },
+      "reference_tasks": [
+        "50e1ac9_1",
+        "50e1ac9_2",
+        "fac291d_2"
+      ],
+      "lift_per_task": {
+        "50e1ac9_1": 0,
+        "50e1ac9_2": 1,
+        "fac291d_2": 0
+      },
+      "lift_mean": 0.3333333333333333,
+      "lift_variance": 0.2222222222222222,
+      "has_positive_spike": true
+    },
+    "shr-00006": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 27,
+      "reference_count_total": 1,
+      "reference_count_by_task": {
+        "50e1ac9_3": 1
+      },
+      "reference_tasks": [
+        "50e1ac9_3"
+      ],
+      "lift_per_task": {
+        "50e1ac9_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "api-00004": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 30,
+      "reference_count_total": 1,
+      "reference_count_by_task": {
+        "50e1ac9_2": 1
+      },
+      "reference_tasks": [
+        "50e1ac9_2"
+      ],
+      "lift_per_task": {
+        "50e1ac9_2": 1
+      },
+      "lift_mean": 1.0,
+      "lift_variance": 0,
+      "has_positive_spike": true
+    },
+    "psw-00002": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "PROBLEM-SOLVING HEURISTICS AND WORKFLOWS",
+      "token_length": 14,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "psw-00007": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "PROBLEM-SOLVING HEURISTICS AND WORKFLOWS",
+      "token_length": 23,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "misc-00003": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "OTHERS",
+      "token_length": 26,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "misc-00008": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "OTHERS",
+      "token_length": 75,
+      "reference_count_total": 1,
+      "reference_count_by_task": {
+        "fac291d_1": 1
+      },
+      "reference_tasks": [
+        "fac291d_1"
+      ],
+      "lift_per_task": {
+        "fac291d_1": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "dummy-00001": {
+      "source": "dummy",
+      "domain": "cooking",
+      "section": "DUMMY_INSIGHTS",
+      "token_length": 45,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "dummy-00002": {
+      "source": "dummy",
+      "domain": "sports_coaching",
+      "section": "DUMMY_INSIGHTS",
+      "token_length": 30,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "dummy-00003": {
+      "source": "dummy",
+      "domain": "personal_finance",
+      "section": "DUMMY_INSIGHTS",
+      "token_length": 28,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    }
+  },
+  "global": {
+    "reference_source_used": "union",
+    "min_references_per_task": 1,
+    "n_tasks_common": 5,
+    "n_insights": 11,
+    "n_dummies": 3,
+    "baseline_success": 2,
+    "fullmem_success": 3,
+    "lift_distribution_summary": {
+      "mean": 0.2,
+      "std": 0.4,
+      "p25": 0,
+      "p75": 0
+    }
+  },
+  "config": {
+    "baseline_path": "/home/bwoo/workspace/ace-appworld/memory_utility/examples/dry_run/stage1/baseline_results.json",
+    "stage2_dir": "/home/bwoo/workspace/ace-appworld/memory_utility/examples/dry_run/stage2",
+    "memory_path": "/home/bwoo/workspace/ace-appworld/memory_utility/examples/dry_run/memory.json",
+    "reference_source": "union",
+    "min_references_per_task": 1
+  },
+  "config_hash": "2577978d01fa3dea238359f0af1dee70438b7bad4bd76e4ea39efb2ca1d28745",
+  "created_at": "2026-04-23T17:14:21.683401Z"
+}

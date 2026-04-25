@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "insight_stats.json",
+  "type": "object",
+  "required": ["per_insight", "global", "config", "config_hash"],
+  "properties": {
+    "per_insight": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "source":                  {"type": "string"},
+          "domain":                  {"type": "string"},
+          "section":                 {"type": "string"},
+          "token_length":            {"type": "integer"},
+          "reference_count_total":   {"type": "integer"},
+          "reference_count_by_task": {"type": "object", "additionalProperties": {"type": "integer"}},
+          "reference_tasks":         {"type": "array", "items": {"type": "string"}},
+          "lift_per_task":           {"type": "object", "additionalProperties": {"type": "integer"}},
+          "lift_mean":               {"type": "number"},
+          "lift_variance":           {"type": "number"},
+          "has_positive_spike":      {"type": "boolean"},
+          "lift_fractional_per_task":       {"type": "object", "additionalProperties": {"type": "number"}},
+          "lift_fractional_mean":           {"type": "number"},
+          "lift_fractional_variance":       {"type": "number"},
+          "has_fractional_positive_spike":  {"type": "boolean"}
+        }
+      }
+    },
+    "global": {
+      "type": "object",
+      "properties": {
+        "reference_source_used":      {"type": "string"},
+        "min_references_per_task":    {"type": "integer"},
+        "n_tasks_common":             {"type": "integer"},
+        "n_insights":                 {"type": "integer"},
+        "n_dummies":                  {"type": "integer"},
+        "baseline_success":                {"type": "integer"},
+        "fullmem_success":                 {"type": "integer"},
+        "baseline_req_passed_total":       {"type": "integer"},
+        "baseline_req_total":              {"type": "integer"},
+        "fullmem_req_passed_total":        {"type": "integer"},
+        "fullmem_req_total":               {"type": "integer"},
+        "lift_distribution_summary":             {"type": "object"},
+        "lift_fractional_distribution_summary":  {"type": "object"}
+      }
+    },
+    "config":       {"type": "object"},
+    "config_hash":  {"type": "string"},
+    "created_at":   {"type": "string"}
+  }
+}

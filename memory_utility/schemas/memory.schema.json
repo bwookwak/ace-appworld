@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "memory.json",
+  "type": "object",
+  "required": ["insights", "config", "config_hash"],
+  "properties": {
+    "insights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "text", "source"],
+        "properties": {
+          "id":            {"type": "string"},
+          "text":          {"type": "string"},
+          "source":        {"type": "string", "enum": ["generated", "provided", "dummy"]},
+          "domain":        {"type": "string"},
+          "section":       {"type": "string"},
+          "token_length":  {"type": "integer"},
+          "metadata":      {"type": "object"}
+        }
+      }
+    },
+    "config":      {"type": "object"},
+    "config_hash": {"type": "string"},
+    "created_at":  {"type": "string"},
+    "stats":       {"type": "object"}
+  }
+}

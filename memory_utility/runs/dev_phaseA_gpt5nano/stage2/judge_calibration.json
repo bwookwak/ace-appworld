@@ -1,0 +1,6 @@
+{
+  "per_step": [],
+  "global": {
+    "note": "calibration requires reference_detection=both"
+  }
+}

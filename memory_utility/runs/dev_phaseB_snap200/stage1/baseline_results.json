@@ -1,0 +1,541 @@
+{
+  "per_task": {
+    "50e1ac9_1": {
+      "success": 1,
+      "step_count": 2,
+      "cost_usd": 0.01,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/50e1ac9_1/logs/lm_calls.jsonl"
+    },
+    "50e1ac9_2": {
+      "success": 1,
+      "step_count": 9,
+      "cost_usd": 0.03,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/50e1ac9_2/logs/lm_calls.jsonl"
+    },
+    "50e1ac9_3": {
+      "success": 1,
+      "step_count": 2,
+      "cost_usd": 0.04,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/50e1ac9_3/logs/lm_calls.jsonl"
+    },
+    "fac291d_1": {
+      "success": 1,
+      "step_count": 1,
+      "cost_usd": 0.05,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/fac291d_1/logs/lm_calls.jsonl"
+    },
+    "fac291d_2": {
+      "success": 1,
+      "step_count": 3,
+      "cost_usd": 0.06,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/fac291d_2/logs/lm_calls.jsonl"
+    },
+    "fac291d_3": {
+      "success": 1,
+      "step_count": 2,
+      "cost_usd": 0.07,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/fac291d_3/logs/lm_calls.jsonl"
+    },
+    "530b157_1": {
+      "success": 0,
+      "step_count": 7,
+      "cost_usd": 0.09,
+      "num_passed": 9,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/530b157_1/logs/lm_calls.jsonl"
+    },
+    "530b157_2": {
+      "success": 0,
+      "step_count": 10,
+      "cost_usd": 0.12,
+      "num_passed": 9,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/530b157_2/logs/lm_calls.jsonl"
+    },
+    "530b157_3": {
+      "success": 0,
+      "step_count": 4,
+      "cost_usd": 0.15,
+      "num_passed": 9,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/530b157_3/logs/lm_calls.jsonl"
+    },
+    "4ec8de5_1": {
+      "success": 1,
+      "step_count": 3,
+      "cost_usd": 0.17,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/4ec8de5_1/logs/lm_calls.jsonl"
+    },
+    "4ec8de5_2": {
+      "success": 1,
+      "step_count": 7,
+      "cost_usd": 0.19,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/4ec8de5_2/logs/lm_calls.jsonl"
+    },
+    "4ec8de5_3": {
+      "success": 1,
+      "step_count": 5,
+      "cost_usd": 0.2,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/4ec8de5_3/logs/lm_calls.jsonl"
+    },
+    "b119b1f_1": {
+      "success": 1,
+      "step_count": 3,
+      "cost_usd": 0.22,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/b119b1f_1/logs/lm_calls.jsonl"
+    },
+    "b119b1f_2": {
+      "success": 1,
+      "step_count": 3,
+      "cost_usd": 0.23,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/b119b1f_2/logs/lm_calls.jsonl"
+    },
+    "b119b1f_3": {
+      "success": 1,
+      "step_count": 4,
+      "cost_usd": 0.24,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/b119b1f_3/logs/lm_calls.jsonl"
+    },
+    "d4e9306_1": {
+      "success": 1,
+      "step_count": 10,
+      "cost_usd": 0.27,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/d4e9306_1/logs/lm_calls.jsonl"
+    },
+    "d4e9306_2": {
+      "success": 1,
+      "step_count": 3,
+      "cost_usd": 0.28,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/d4e9306_2/logs/lm_calls.jsonl"
+    },
+    "d4e9306_3": {
+      "success": 1,
+      "step_count": 5,
+      "cost_usd": 0.3,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/d4e9306_3/logs/lm_calls.jsonl"
+    },
+    "0d8a4ee_1": {
+      "success": 1,
+      "step_count": 11,
+      "cost_usd": 0.34,
+      "num_passed": 5,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/0d8a4ee_1/logs/lm_calls.jsonl"
+    },
+    "0d8a4ee_2": {
+      "success": 0,
+      "step_count": 1,
+      "cost_usd": 0.34,
+      "num_passed": 4,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/0d8a4ee_2/logs/lm_calls.jsonl"
+    },
+    "0d8a4ee_3": {
+      "success": 0,
+      "step_count": 6,
+      "cost_usd": 0.37,
+      "num_passed": 4,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/0d8a4ee_3/logs/lm_calls.jsonl"
+    },
+    "37a8675_1": {
+      "success": 1,
+      "step_count": 12,
+      "cost_usd": 0.41,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/37a8675_1/logs/lm_calls.jsonl"
+    },
+    "37a8675_2": {
+      "success": 0,
+      "step_count": 16,
+      "cost_usd": 0.44,
+      "num_passed": 5,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/37a8675_2/logs/lm_calls.jsonl"
+    },
+    "37a8675_3": {
+      "success": 0,
+      "step_count": 12,
+      "cost_usd": 0.47,
+      "num_passed": 5,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/37a8675_3/logs/lm_calls.jsonl"
+    },
+    "3ab5b8b_1": {
+      "success": 1,
+      "step_count": 6,
+      "cost_usd": 0.48,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/3ab5b8b_1/logs/lm_calls.jsonl"
+    },
+    "3ab5b8b_2": {
+      "success": 0,
+      "step_count": 9,
+      "cost_usd": 0.53,
+      "num_passed": 4,
+      "num_failed": 2,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/3ab5b8b_2/logs/lm_calls.jsonl"
+    },
+    "3ab5b8b_3": {
+      "success": 0,
+      "step_count": 2,
+      "cost_usd": 0.53,
+      "num_passed": 3,
+      "num_failed": 3,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/3ab5b8b_3/logs/lm_calls.jsonl"
+    },
+    "df61dc5_1": {
+      "success": 0,
+      "step_count": 7,
+      "cost_usd": 0.55,
+      "num_passed": 6,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/df61dc5_1/logs/lm_calls.jsonl"
+    },
+    "df61dc5_2": {
+      "success": 0,
+      "step_count": 7,
+      "cost_usd": 0.59,
+      "num_passed": 5,
+      "num_failed": 2,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/df61dc5_2/logs/lm_calls.jsonl"
+    },
+    "df61dc5_3": {
+      "success": 0,
+      "step_count": 4,
+      "cost_usd": 0.61,
+      "num_passed": 6,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/df61dc5_3/logs/lm_calls.jsonl"
+    },
+    "383cbac_1": {
+      "success": 1,
+      "step_count": 4,
+      "cost_usd": 0.63,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/383cbac_1/logs/lm_calls.jsonl"
+    },
+    "383cbac_2": {
+      "success": 1,
+      "step_count": 5,
+      "cost_usd": 0.64,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/383cbac_2/logs/lm_calls.jsonl"
+    },
+    "383cbac_3": {
+      "success": 1,
+      "step_count": 6,
+      "cost_usd": 0.67,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/383cbac_3/logs/lm_calls.jsonl"
+    },
+    "23cf851_1": {
+      "success": 1,
+      "step_count": 8,
+      "cost_usd": 0.69,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/23cf851_1/logs/lm_calls.jsonl"
+    },
+    "23cf851_2": {
+      "success": 1,
+      "step_count": 4,
+      "cost_usd": 0.71,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/23cf851_2/logs/lm_calls.jsonl"
+    },
+    "23cf851_3": {
+      "success": 1,
+      "step_count": 4,
+      "cost_usd": 0.73,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/23cf851_3/logs/lm_calls.jsonl"
+    },
+    "57c3486_1": {
+      "success": 1,
+      "step_count": 6,
+      "cost_usd": 0.74,
+      "num_passed": 5,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/57c3486_1/logs/lm_calls.jsonl"
+    },
+    "57c3486_2": {
+      "success": 0,
+      "step_count": 7,
+      "cost_usd": 0.76,
+      "num_passed": 4,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/57c3486_2/logs/lm_calls.jsonl"
+    },
+    "57c3486_3": {
+      "success": 1,
+      "step_count": 8,
+      "cost_usd": 0.79,
+      "num_passed": 5,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/57c3486_3/logs/lm_calls.jsonl"
+    },
+    "68ee2c9_1": {
+      "success": 0,
+      "step_count": 4,
+      "cost_usd": 0.81,
+      "num_passed": 3,
+      "num_failed": 2,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/68ee2c9_1/logs/lm_calls.jsonl"
+    },
+    "68ee2c9_2": {
+      "success": 1,
+      "step_count": 4,
+      "cost_usd": 0.83,
+      "num_passed": 5,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/68ee2c9_2/logs/lm_calls.jsonl"
+    },
+    "68ee2c9_3": {
+      "success": 1,
+      "step_count": 11,
+      "cost_usd": 0.91,
+      "num_passed": 5,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/68ee2c9_3/logs/lm_calls.jsonl"
+    },
+    "6bdbc26_1": {
+      "success": 1,
+      "step_count": 8,
+      "cost_usd": 0.93,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/6bdbc26_1/logs/lm_calls.jsonl"
+    },
+    "6bdbc26_2": {
+      "success": 1,
+      "step_count": 4,
+      "cost_usd": 0.94,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/6bdbc26_2/logs/lm_calls.jsonl"
+    },
+    "6bdbc26_3": {
+      "success": 1,
+      "step_count": 2,
+      "cost_usd": 0.95,
+      "num_passed": 2,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/6bdbc26_3/logs/lm_calls.jsonl"
+    },
+    "6171bbc_1": {
+      "success": 0,
+      "step_count": 7,
+      "cost_usd": 0.99,
+      "num_passed": 5,
+      "num_failed": 2,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/6171bbc_1/logs/lm_calls.jsonl"
+    },
+    "6171bbc_2": {
+      "success": 1,
+      "step_count": 5,
+      "cost_usd": 1.02,
+      "num_passed": 7,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/6171bbc_2/logs/lm_calls.jsonl"
+    },
+    "6171bbc_3": {
+      "success": 0,
+      "step_count": 12,
+      "cost_usd": 1.06,
+      "num_passed": 6,
+      "num_failed": 1,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/6171bbc_3/logs/lm_calls.jsonl"
+    },
+    "6c2c621_1": {
+      "success": 0,
+      "step_count": 7,
+      "cost_usd": 1.08,
+      "num_passed": 6,
+      "num_failed": 2,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/6c2c621_1/logs/lm_calls.jsonl"
+    },
+    "6c2c621_2": {
+      "success": 0,
+      "step_count": 5,
+      "cost_usd": 1.1,
+      "num_passed": 2,
+      "num_failed": 6,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/6c2c621_2/logs/lm_calls.jsonl"
+    },
+    "6c2c621_3": {
+      "success": 0,
+      "step_count": 5,
+      "cost_usd": 1.12,
+      "num_passed": 6,
+      "num_failed": 2,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/6c2c621_3/logs/lm_calls.jsonl"
+    },
+    "396c5a2_1": {
+      "success": 1,
+      "step_count": 2,
+      "cost_usd": 1.13,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/396c5a2_1/logs/lm_calls.jsonl"
+    },
+    "396c5a2_2": {
+      "success": 1,
+      "step_count": 5,
+      "cost_usd": 1.15,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/396c5a2_2/logs/lm_calls.jsonl"
+    },
+    "396c5a2_3": {
+      "success": 1,
+      "step_count": 7,
+      "cost_usd": 1.17,
+      "num_passed": 6,
+      "num_failed": 0,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/396c5a2_3/logs/lm_calls.jsonl"
+    },
+    "4fab96f_1": {
+      "success": 0,
+      "step_count": 3,
+      "cost_usd": 1.18,
+      "num_passed": 1,
+      "num_failed": 7,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/4fab96f_1/logs/lm_calls.jsonl"
+    },
+    "4fab96f_2": {
+      "success": 0,
+      "step_count": 5,
+      "cost_usd": 1.2,
+      "num_passed": 3,
+      "num_failed": 5,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/4fab96f_2/logs/lm_calls.jsonl"
+    },
+    "4fab96f_3": {
+      "success": 0,
+      "step_count": 2,
+      "cost_usd": 1.21,
+      "num_passed": 2,
+      "num_failed": 6,
+      "trajectory_path": "/home/bwoo/workspace/ace-appworld/experiments/outputs/memutil_dev_phaseA_gpt5mini_stage1/tasks/4fab96f_3/logs/lm_calls.jsonl"
+    }
+  },
+  "aggregate": {
+    "n_tasks": 57,
+    "n_ran": 57,
+    "n_success": 35,
+    "success_rate": 0.6140350877192983,
+    "mean_steps": 5.719298245614035,
+    "total_cost_usd": 33.52
+  },
+  "config": {
+    "tasks_dataset": "dev",
+    "sample_size": null,
+    "task_ids_csv": null,
+    "resolved_task_ids": [
+      "50e1ac9_1",
+      "50e1ac9_2",
+      "50e1ac9_3",
+      "fac291d_1",
+      "fac291d_2",
+      "fac291d_3",
+      "530b157_1",
+      "530b157_2",
+      "530b157_3",
+      "4ec8de5_1",
+      "4ec8de5_2",
+      "4ec8de5_3",
+      "b119b1f_1",
+      "b119b1f_2",
+      "b119b1f_3",
+      "d4e9306_1",
+      "d4e9306_2",
+      "d4e9306_3",
+      "0d8a4ee_1",
+      "0d8a4ee_2",
+      "0d8a4ee_3",
+      "37a8675_1",
+      "37a8675_2",
+      "37a8675_3",
+      "3ab5b8b_1",
+      "3ab5b8b_2",
+      "3ab5b8b_3",
+      "df61dc5_1",
+      "df61dc5_2",
+      "df61dc5_3",
+      "383cbac_1",
+      "383cbac_2",
+      "383cbac_3",
+      "23cf851_1",
+      "23cf851_2",
+      "23cf851_3",
+      "57c3486_1",
+      "57c3486_2",
+      "57c3486_3",
+      "68ee2c9_1",
+      "68ee2c9_2",
+      "68ee2c9_3",
+      "6bdbc26_1",
+      "6bdbc26_2",
+      "6bdbc26_3",
+      "6171bbc_1",
+      "6171bbc_2",
+      "6171bbc_3",
+      "6c2c621_1",
+      "6c2c621_2",
+      "6c2c621_3",
+      "396c5a2_1",
+      "396c5a2_2",
+      "396c5a2_3",
+      "4fab96f_1",
+      "4fab96f_2",
+      "4fab96f_3"
+    ],
+    "baseline_playbook": "/home/bwoo/workspace/ace-appworld/experiments/playbooks/appworld_initial_playbook.txt",
+    "experiment_name": "memutil_dev_phaseA_gpt5mini_stage1",
+    "agent_model": "gpt-5-mini",
+    "agent_provider": "openai",
+    "openrouter_min_throughput_p90": 100,
+    "openrouter_max_latency_p90": 1
+  },
+  "config_hash": "c773eb0158701258502bbe589354194e79523ef7875be7493207602ec27cd2fc",
+  "experiment_name": "memutil_dev_phaseA_gpt5mini_stage1",
+  "created_at": "2026-04-24T23:32:07.469382Z"
+}

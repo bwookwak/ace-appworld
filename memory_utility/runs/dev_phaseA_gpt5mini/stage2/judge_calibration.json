@@ -1,0 +1,7326 @@
+{
+  "per_step": [
+    {
+      "task_id": "50e1ac9_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "50e1ac9_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "50e1ac9_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "50e1ac9_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00123",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00052",
+        "shr-00081",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00123",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.2857142857142857
+    },
+    {
+      "task_id": "50e1ac9_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "50e1ac9_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "50e1ac9_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "50e1ac9_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00052",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00052",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.5714285714285714
+    },
+    {
+      "task_id": "50e1ac9_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00032",
+        "api-00123",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "50e1ac9_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00052"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00052"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "50e1ac9_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "cms-00010",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00052"
+      ],
+      "judge_ids": [
+        "cms-00010",
+        "psw-00007",
+        "shr-00005",
+        "shr-00052"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "50e1ac9_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "api-00032",
+        "api-00104",
+        "api-00123",
+        "cms-00010",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00052",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "api-00032",
+        "api-00104",
+        "api-00123",
+        "cms-00010",
+        "shr-00005",
+        "shr-00052",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.5833333333333334
+    },
+    {
+      "task_id": "50e1ac9_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00123",
+        "psw-00007",
+        "shr-00005",
+        "shr-00052"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.25
+    },
+    {
+      "task_id": "50e1ac9_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "50e1ac9_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00123",
+        "cms-00010",
+        "psw-00002",
+        "psw-00007",
+        "shr-00052",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00123",
+        "cms-00010",
+        "psw-00007",
+        "shr-00052",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.8333333333333334
+    },
+    {
+      "task_id": "fac291d_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00104",
+        "api-00123",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031",
+        "vc-00034"
+      ],
+      "judge_ids": [
+        "api-00104",
+        "api-00123",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031",
+        "vc-00034"
+      ],
+      "agreement_jaccard": 0.7777777777777778
+    },
+    {
+      "task_id": "fac291d_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "api-00032",
+        "api-00123",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00034"
+      ],
+      "judge_ids": [
+        "api-00123",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.4444444444444444
+    },
+    {
+      "task_id": "fac291d_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "api-00032",
+        "api-00123",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "fac291d_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "fac291d_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00104",
+        "api-00123",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00034"
+      ],
+      "judge_ids": [
+        "api-00104",
+        "psw-00007",
+        "shr-00005",
+        "vc-00034"
+      ],
+      "agreement_jaccard": 0.5714285714285714
+    },
+    {
+      "task_id": "fac291d_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00104",
+        "api-00123",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00034"
+      ],
+      "judge_ids": [
+        "api-00104",
+        "api-00123",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00034"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "fac291d_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "api-00032",
+        "api-00104",
+        "api-00123",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00032",
+        "api-00104",
+        "api-00123",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.9090909090909091
+    },
+    {
+      "task_id": "fac291d_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00032",
+        "api-00104",
+        "api-00123",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00034"
+      ],
+      "judge_ids": [
+        "api-00032",
+        "api-00104",
+        "api-00123",
+        "psw-00007",
+        "shr-00005",
+        "vc-00034"
+      ],
+      "agreement_jaccard": 0.8571428571428571
+    },
+    {
+      "task_id": "fac291d_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "psw-00002",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "fac291d_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "api-00032",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00031",
+        "vc-00034"
+      ],
+      "judge_ids": [
+        "api-00032",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.4444444444444444
+    },
+    {
+      "task_id": "fac291d_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00034"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "vc-00034"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "fac291d_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00001",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "fac291d_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00032",
+        "api-00123",
+        "cms-00010",
+        "psw-00002",
+        "psw-00007",
+        "shr-00001",
+        "shr-00005",
+        "vc-00034"
+      ],
+      "judge_ids": [
+        "api-00032",
+        "api-00123",
+        "cms-00010",
+        "psw-00007",
+        "shr-00005",
+        "vc-00034"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "530b157_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "530b157_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00012",
+        "ts-00023",
+        "vc-00086"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00012",
+        "ts-00023",
+        "vc-00086"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "530b157_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "530b157_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "530b157_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "530b157_1",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "ts-00023"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "530b157_1",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "ts-00023",
+        "vc-00014",
+        "vc-00086"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00086"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "530b157_1",
+      "step_idx": 7,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "530b157_1",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00004",
+        "api-00088",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00088"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "530b157_1",
+      "step_idx": 9,
+      "citation_ids": [
+        "api-00088",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00088"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "530b157_1",
+      "step_idx": 10,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.8
+    },
+    {
+      "task_id": "530b157_1",
+      "step_idx": 11,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "api-00038",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "shr-00012",
+        "shr-00085",
+        "shr-00093",
+        "ts-00023",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.18181818181818182
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "api-00026",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00012",
+        "vc-00014",
+        "vc-00046",
+        "vc-00086"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.2
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00012",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00012",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.8333333333333334
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00004",
+        "cms-00010",
+        "misc-00008",
+        "shr-00005",
+        "shr-00012",
+        "ts-00023",
+        "vc-00014",
+        "vc-00086"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.25
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 9,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00012",
+        "shr-00093",
+        "vc-00014",
+        "vc-00086"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.2857142857142857
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 10,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 11,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "shr-00012",
+        "ts-00023",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "shr-00012",
+        "ts-00023",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.875
+    },
+    {
+      "task_id": "530b157_2",
+      "step_idx": 12,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006",
+        "shr-00012"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "530b157_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004"
+      ],
+      "judge_ids": [
+        "api-00004"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "530b157_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "530b157_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "530b157_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "530b157_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "api-00011",
+        "api-00088",
+        "psw-00002",
+        "shr-00005",
+        "vc-00086"
+      ],
+      "judge_ids": [
+        "api-00011",
+        "api-00088",
+        "psw-00002",
+        "shr-00005",
+        "vc-00086"
+      ],
+      "agreement_jaccard": 0.8333333333333334
+    },
+    {
+      "task_id": "530b157_3",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "ts-00023",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "530b157_3",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "shr-00012"
+      ],
+      "judge_ids": [
+        "api-00004"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "530b157_3",
+      "step_idx": 7,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "530b157_3",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "4ec8de5_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "4ec8de5_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00036",
+        "api-00123",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00036",
+        "api-00123",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "4ec8de5_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "4ec8de5_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "4ec8de5_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "4ec8de5_1",
+      "step_idx": 5,
+      "citation_ids": [
+        "cms-00010",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "cms-00010",
+        "psw-00007",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "4ec8de5_1",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00036",
+        "psw-00002",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00036",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "4ec8de5_1",
+      "step_idx": 7,
+      "citation_ids": [
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "4ec8de5_1",
+      "step_idx": 8,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "4ec8de5_1",
+      "step_idx": 9,
+      "citation_ids": [
+        "api-00036",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00036",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.2857142857142857
+    },
+    {
+      "task_id": "4ec8de5_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00036",
+        "api-00123",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00036",
+        "api-00123",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.625
+    },
+    {
+      "task_id": "4ec8de5_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "4ec8de5_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00036",
+        "api-00123",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00036",
+        "api-00123",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.7272727272727273
+    },
+    {
+      "task_id": "4ec8de5_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "api-00036",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "4ec8de5_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "4ec8de5_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "4ec8de5_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00036",
+        "psw-00002",
+        "psw-00007",
+        "shr-00006",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00036",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "b119b1f_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "b119b1f_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "b119b1f_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00108"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014",
+        "vc-00108"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "b119b1f_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00001",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "b119b1f_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00082"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00082"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "b119b1f_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "shr-00001",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00001",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "b119b1f_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "shr-00001",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "b119b1f_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "misc-00008"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "b119b1f_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "b119b1f_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "d4e9306_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00118",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00117",
+        "vc-00014",
+        "vc-00051"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "vc-00051"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "d4e9306_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "d4e9306_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00117",
+        "vc-00051"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00117",
+        "vc-00051"
+      ],
+      "agreement_jaccard": 0.8
+    },
+    {
+      "task_id": "d4e9306_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "misc-00008",
+        "shr-00001",
+        "shr-00006"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "d4e9306_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00118",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00117",
+        "vc-00014",
+        "vc-00101"
+      ],
+      "judge_ids": [
+        "api-00118",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00117",
+        "vc-00101"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "d4e9306_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "d4e9306_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "d4e9306_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "d4e9306_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00118",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00017",
+        "vc-00121"
+      ],
+      "judge_ids": [
+        "api-00118",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00017",
+        "vc-00121"
+      ],
+      "agreement_jaccard": 0.8571428571428571
+    },
+    {
+      "task_id": "d4e9306_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "d4e9306_2",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "api-00118",
+        "psw-00007",
+        "shr-00005",
+        "shr-00017",
+        "vc-00101"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00017",
+        "vc-00101"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "d4e9306_2",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00118",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00017",
+        "vc-00101"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00017"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "d4e9306_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00118",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00117",
+        "vc-00014",
+        "vc-00016",
+        "vc-00105"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00016",
+        "vc-00105"
+      ],
+      "agreement_jaccard": 0.5555555555555556
+    },
+    {
+      "task_id": "d4e9306_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "d4e9306_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "d4e9306_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00118",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00117",
+        "vc-00105"
+      ],
+      "judge_ids": [
+        "api-00118",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00117",
+        "vc-00105"
+      ],
+      "agreement_jaccard": 0.8571428571428571
+    },
+    {
+      "task_id": "d4e9306_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "api-00118",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00117",
+        "vc-00014",
+        "vc-00051"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00118",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00117",
+        "vc-00014",
+        "vc-00051"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "d4e9306_3",
+      "step_idx": 5,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "d4e9306_3",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "api-00118",
+        "cms-00010",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00117",
+        "vc-00014",
+        "vc-00101"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00118",
+        "cms-00010",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00117",
+        "vc-00014",
+        "vc-00101"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "d4e9306_3",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00118",
+        "psw-00007",
+        "shr-00005",
+        "shr-00117",
+        "vc-00031",
+        "vc-00105"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00117",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "0d8a4ee_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "0d8a4ee_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "0d8a4ee_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "0d8a4ee_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "0d8a4ee_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "api-00110",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00110",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "0d8a4ee_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "0d8a4ee_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "cms-00010",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5714285714285714
+    },
+    {
+      "task_id": "0d8a4ee_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00026",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00026",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "0d8a4ee_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00026",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00026",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.8888888888888888
+    },
+    {
+      "task_id": "0d8a4ee_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00020",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.7142857142857143
+    },
+    {
+      "task_id": "0d8a4ee_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00026",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.42857142857142855
+    },
+    {
+      "task_id": "0d8a4ee_2",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "psw-00007"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "0d8a4ee_2",
+      "step_idx": 7,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "0d8a4ee_2",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "cms-00010",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "cms-00010",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5714285714285714
+    },
+    {
+      "task_id": "0d8a4ee_2",
+      "step_idx": 9,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "0d8a4ee_2",
+      "step_idx": 10,
+      "citation_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "0d8a4ee_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "psw-00002"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "0d8a4ee_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00020",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "0d8a4ee_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "api-00110",
+        "psw-00007",
+        "shr-00001",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00110",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.8333333333333334
+    },
+    {
+      "task_id": "0d8a4ee_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "0d8a4ee_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "0d8a4ee_3",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "api-00110",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00110",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "0d8a4ee_3",
+      "step_idx": 6,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "0d8a4ee_3",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00012",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "misc-00008",
+        "shr-00005",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.5714285714285714
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "shr-00012",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 9,
+      "citation_ids": [
+        "api-00004",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 10,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 11,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 12,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014",
+        "vc-00057",
+        "vc-00086"
+      ],
+      "judge_ids": [
+        "vc-00014",
+        "vc-00057",
+        "vc-00086"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 13,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 14,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 15,
+      "citation_ids": [
+        "api-00004",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 16,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 17,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 18,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "37a8675_1",
+      "step_idx": 19,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00012",
+        "vc-00014",
+        "vc-00086"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.8
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 9,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 10,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.8
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 11,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 12,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 13,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 14,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 15,
+      "citation_ids": [
+        "psw-00007",
+        "shr-00005",
+        "vc-00027"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "37a8675_2",
+      "step_idx": 16,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "ts-00024",
+        "vc-00014",
+        "vc-00086"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.2857142857142857
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 9,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 10,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 11,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 12,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 13,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 14,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.25
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 15,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 16,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 17,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "37a8675_3",
+      "step_idx": 18,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "3ab5b8b_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "3ab5b8b_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00016",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "cms-00010",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00016",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.7
+    },
+    {
+      "task_id": "3ab5b8b_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "psw-00002"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "3ab5b8b_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "api-00032",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00032",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.375
+    },
+    {
+      "task_id": "3ab5b8b_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "api-00032",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.42857142857142855
+    },
+    {
+      "task_id": "3ab5b8b_1",
+      "step_idx": 5,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "3ab5b8b_1",
+      "step_idx": 6,
+      "citation_ids": [
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "3ab5b8b_1",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00104",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00016",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00016",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "3ab5b8b_1",
+      "step_idx": 8,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "3ab5b8b_1",
+      "step_idx": 9,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5714285714285714
+    },
+    {
+      "task_id": "3ab5b8b_1",
+      "step_idx": 10,
+      "citation_ids": [
+        "api-00104",
+        "psw-00007",
+        "shr-00005",
+        "vc-00016",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00104",
+        "psw-00007",
+        "shr-00005",
+        "vc-00016",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "3ab5b8b_1",
+      "step_idx": 11,
+      "citation_ids": [
+        "misc-00008",
+        "shr-00001",
+        "shr-00006"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "3ab5b8b_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00001",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "3ab5b8b_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "3ab5b8b_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "3ab5b8b_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "3ab5b8b_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "3ab5b8b_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00013",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00013",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.7777777777777778
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 6,
+      "citation_ids": [
+        "shr-00001",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00072",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00072",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 8,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 9,
+      "citation_ids": [
+        "api-00004",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "cms-00010",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 10,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 11,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 12,
+      "citation_ids": [
+        "api-00032",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00032",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.8
+    },
+    {
+      "task_id": "3ab5b8b_3",
+      "step_idx": 13,
+      "citation_ids": [
+        "misc-00008",
+        "shr-00001",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "misc-00008"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "df61dc5_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00020",
+        "shr-00005",
+        "shr-00048",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.8333333333333334
+    },
+    {
+      "task_id": "df61dc5_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "shr-00005",
+        "shr-00048",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "df61dc5_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00027",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00020",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00027",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "df61dc5_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "df61dc5_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00020",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "df61dc5_1",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00110",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00027",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00048",
+        "vc-00027",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "df61dc5_1",
+      "step_idx": 6,
+      "citation_ids": [
+        "shr-00001",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "shr-00006",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "df61dc5_1",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00048"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "df61dc5_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "df61dc5_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00026",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "api-00110",
+        "vc-00031",
+        "vc-00034"
+      ],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "df61dc5_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00026",
+        "psw-00002",
+        "psw-00007",
+        "vc-00027",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00026",
+        "psw-00002",
+        "psw-00007",
+        "vc-00027",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "df61dc5_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "df61dc5_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "df61dc5_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "df61dc5_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "df61dc5_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00020",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "df61dc5_3",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "misc-00003",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00027",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00027"
+      ],
+      "agreement_jaccard": 0.5555555555555556
+    },
+    {
+      "task_id": "df61dc5_3",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.8
+    },
+    {
+      "task_id": "df61dc5_3",
+      "step_idx": 7,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "df61dc5_3",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00020",
+        "psw-00007",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "psw-00007",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "383cbac_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00127",
+        "psw-00007",
+        "shr-00005",
+        "vc-00027",
+        "vc-00040"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00127",
+        "psw-00007",
+        "shr-00005",
+        "vc-00027",
+        "vc-00040"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "383cbac_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "383cbac_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "383cbac_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "api-00127",
+        "psw-00007",
+        "vc-00040"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00127",
+        "psw-00007",
+        "vc-00040"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "383cbac_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00127",
+        "psw-00007",
+        "shr-00005",
+        "shr-00041",
+        "vc-00014",
+        "vc-00027",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "api-00127",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "383cbac_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00020",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "383cbac_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00127",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00041",
+        "shr-00048",
+        "vc-00040"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "api-00127",
+        "psw-00007",
+        "shr-00005",
+        "vc-00040"
+      ],
+      "agreement_jaccard": 0.5555555555555556
+    },
+    {
+      "task_id": "383cbac_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "383cbac_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "383cbac_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "383cbac_2",
+      "step_idx": 6,
+      "citation_ids": [
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "383cbac_2",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00127",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00127",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "383cbac_2",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00020",
+        "api-00127",
+        "psw-00007",
+        "shr-00041",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "psw-00007",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "383cbac_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00127",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00040"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00020",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.42857142857142855
+    },
+    {
+      "task_id": "383cbac_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "383cbac_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "api-00127",
+        "psw-00007",
+        "shr-00005",
+        "vc-00040"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00127",
+        "psw-00007",
+        "shr-00005",
+        "vc-00040"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "383cbac_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "383cbac_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "383cbac_3",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00127",
+        "psw-00007",
+        "vc-00040"
+      ],
+      "judge_ids": [
+        "api-00127",
+        "psw-00007",
+        "vc-00040"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "23cf851_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00127",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00025",
+        "vc-00027",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00127",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00025",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "23cf851_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "23cf851_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "api-00127",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00027",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00127",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00027",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "23cf851_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "api-00127",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00127",
+        "psw-00007",
+        "shr-00005",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.8333333333333334
+    },
+    {
+      "task_id": "23cf851_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00025",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00025",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "23cf851_1",
+      "step_idx": 5,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "23cf851_1",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.7142857142857143
+    },
+    {
+      "task_id": "23cf851_1",
+      "step_idx": 7,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "23cf851_1",
+      "step_idx": 8,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "23cf851_1",
+      "step_idx": 9,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00046",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "23cf851_1",
+      "step_idx": 10,
+      "citation_ids": [
+        "psw-00007",
+        "shr-00005",
+        "vc-00031",
+        "vc-00046"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "23cf851_1",
+      "step_idx": 11,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00007",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.8333333333333334
+    },
+    {
+      "task_id": "23cf851_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "23cf851_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00027",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00027",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.8571428571428571
+    },
+    {
+      "task_id": "23cf851_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00027",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00027",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.875
+    },
+    {
+      "task_id": "23cf851_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00031",
+        "vc-00046",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "psw-00007",
+        "vc-00031",
+        "vc-00046",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.625
+    },
+    {
+      "task_id": "23cf851_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "23cf851_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "psw-00007",
+        "vc-00046",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "vc-00046",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "23cf851_2",
+      "step_idx": 6,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "23cf851_2",
+      "step_idx": 7,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "23cf851_2",
+      "step_idx": 8,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "23cf851_2",
+      "step_idx": 9,
+      "citation_ids": [
+        "psw-00007",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "vc-00031",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "23cf851_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00046",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00046",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "23cf851_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "23cf851_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "api-00127",
+        "psw-00007",
+        "shr-00005",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "23cf851_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "psw-00007",
+        "shr-00005",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "57c3486_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "57c3486_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "57c3486_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "57c3486_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "57c3486_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "57c3486_1",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "57c3486_1",
+      "step_idx": 6,
+      "citation_ids": [
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "57c3486_1",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00032",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00117",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00117",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "57c3486_1",
+      "step_idx": 8,
+      "citation_ids": [
+        "misc-00008",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00115",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00115",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00016",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 6,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00017",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00017",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.7142857142857143
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 7,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00004"
+      ],
+      "judge_ids": [
+        "api-00004"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 9,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00013",
+        "shr-00015",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.2222222222222222
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 10,
+      "citation_ids": [
+        "psw-00002",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 11,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.2857142857142857
+    },
+    {
+      "task_id": "57c3486_2",
+      "step_idx": 12,
+      "citation_ids": [
+        "misc-00008",
+        "shr-00001",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "shr-00001"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "57c3486_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "57c3486_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "57c3486_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "57c3486_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "cms-00010",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00015",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "cms-00010",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "shr-00015",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.7777777777777778
+    },
+    {
+      "task_id": "57c3486_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00115",
+        "shr-00117",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "57c3486_3",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00015",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "cms-00010",
+        "psw-00007",
+        "shr-00005",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.4444444444444444
+    },
+    {
+      "task_id": "57c3486_3",
+      "step_idx": 6,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "57c3486_3",
+      "step_idx": 7,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "57c3486_3",
+      "step_idx": 8,
+      "citation_ids": [
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "57c3486_3",
+      "step_idx": 9,
+      "citation_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00015",
+        "vc-00016",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00015",
+        "vc-00016",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.8333333333333334
+    },
+    {
+      "task_id": "68ee2c9_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "68ee2c9_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "68ee2c9_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014",
+        "vc-00047",
+        "vc-00073"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "shr-00005",
+        "vc-00014",
+        "vc-00047",
+        "vc-00073"
+      ],
+      "agreement_jaccard": 0.8333333333333334
+    },
+    {
+      "task_id": "68ee2c9_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014",
+        "vc-00031",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.2857142857142857
+    },
+    {
+      "task_id": "68ee2c9_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00001",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "68ee2c9_1",
+      "step_idx": 5,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "68ee2c9_1",
+      "step_idx": 6,
+      "citation_ids": [
+        "misc-00008",
+        "shr-00005",
+        "shr-00060",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00060"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "68ee2c9_1",
+      "step_idx": 7,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "shr-00005",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "68ee2c9_1",
+      "step_idx": 8,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "68ee2c9_1",
+      "step_idx": 9,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "68ee2c9_1",
+      "step_idx": 10,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "68ee2c9_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00001",
+        "shr-00005",
+        "shr-00006",
+        "vc-00047",
+        "vc-00073"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00001",
+        "shr-00005",
+        "shr-00006",
+        "vc-00047",
+        "vc-00073"
+      ],
+      "agreement_jaccard": 0.8571428571428571
+    },
+    {
+      "task_id": "68ee2c9_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "68ee2c9_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "68ee2c9_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "68ee2c9_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "68ee2c9_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "68ee2c9_2",
+      "step_idx": 6,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00060"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00060"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "68ee2c9_2",
+      "step_idx": 7,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00073"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00073"
+      ],
+      "agreement_jaccard": 0.8
+    },
+    {
+      "task_id": "68ee2c9_2",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "68ee2c9_2",
+      "step_idx": 9,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "68ee2c9_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00060",
+        "vc-00047",
+        "vc-00073"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00060",
+        "vc-00047",
+        "vc-00073"
+      ],
+      "agreement_jaccard": 0.8571428571428571
+    },
+    {
+      "task_id": "68ee2c9_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "api-00070",
+        "misc-00008",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00070",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "68ee2c9_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00060",
+        "vc-00014",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00060",
+        "vc-00014",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.5714285714285714
+    },
+    {
+      "task_id": "68ee2c9_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.25
+    },
+    {
+      "task_id": "68ee2c9_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00063",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00063",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "6bdbc26_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014",
+        "vc-00108"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "6bdbc26_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00108"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "6bdbc26_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6bdbc26_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "6bdbc26_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6bdbc26_1",
+      "step_idx": 5,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6bdbc26_1",
+      "step_idx": 6,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6bdbc26_1",
+      "step_idx": 7,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "6bdbc26_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "6bdbc26_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "6bdbc26_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "6bdbc26_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.8333333333333334
+    },
+    {
+      "task_id": "6bdbc26_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "6bdbc26_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6bdbc26_2",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.25
+    },
+    {
+      "task_id": "6bdbc26_2",
+      "step_idx": 7,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "6bdbc26_2",
+      "step_idx": 8,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00108"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "vc-00108"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6bdbc26_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014",
+        "vc-00108"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014",
+        "vc-00108"
+      ],
+      "agreement_jaccard": 0.8333333333333334
+    },
+    {
+      "task_id": "6bdbc26_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "6bdbc26_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "6bdbc26_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "6bdbc26_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014",
+        "vc-00108"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "6bdbc26_3",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "shr-00001",
+        "shr-00005",
+        "vc-00014",
+        "vc-00108"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014",
+        "vc-00108"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6171bbc_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6171bbc_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "6171bbc_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6171bbc_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6171bbc_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00013",
+        "vc-00014",
+        "vc-00031",
+        "vc-00069"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "cms-00010",
+        "psw-00007",
+        "shr-00005",
+        "shr-00013",
+        "vc-00014",
+        "vc-00031",
+        "vc-00069"
+      ],
+      "agreement_jaccard": 0.8
+    },
+    {
+      "task_id": "6171bbc_1",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "6171bbc_1",
+      "step_idx": 6,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "6171bbc_1",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00004",
+        "cms-00009",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00013",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "cms-00009",
+        "cms-00010",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00013",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.7272727272727273
+    },
+    {
+      "task_id": "6171bbc_1",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00123",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00013",
+        "vc-00069"
+      ],
+      "judge_ids": [
+        "api-00123",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00013",
+        "vc-00069"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6171bbc_1",
+      "step_idx": 9,
+      "citation_ids": [
+        "cms-00010",
+        "psw-00002",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "cms-00010"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "6171bbc_1",
+      "step_idx": 10,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6171bbc_1",
+      "step_idx": 11,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "6171bbc_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00126",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00126",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.7142857142857143
+    },
+    {
+      "task_id": "6171bbc_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6171bbc_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6171bbc_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6171bbc_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "api-00126",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00016",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00126",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00016",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6171bbc_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "api-00104",
+        "api-00126",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00104",
+        "api-00126",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.75
+    },
+    {
+      "task_id": "6171bbc_2",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00126",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00016",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.2857142857142857
+    },
+    {
+      "task_id": "6171bbc_2",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6171bbc_2",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6171bbc_2",
+      "step_idx": 9,
+      "citation_ids": [
+        "api-00104",
+        "api-00126",
+        "psw-00007",
+        "shr-00005",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "6171bbc_2",
+      "step_idx": 10,
+      "citation_ids": [
+        "misc-00008"
+      ],
+      "judge_ids": [
+        "misc-00008"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6171bbc_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6171bbc_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6171bbc_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "6171bbc_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00069"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "cms-00010",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00069"
+      ],
+      "agreement_jaccard": 0.8888888888888888
+    },
+    {
+      "task_id": "6171bbc_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "6171bbc_3",
+      "step_idx": 5,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00016",
+        "vc-00031",
+        "vc-00037"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014",
+        "vc-00016",
+        "vc-00037"
+      ],
+      "agreement_jaccard": 0.4444444444444444
+    },
+    {
+      "task_id": "6171bbc_3",
+      "step_idx": 6,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6171bbc_3",
+      "step_idx": 7,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6171bbc_3",
+      "step_idx": 8,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00069"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00069"
+      ],
+      "agreement_jaccard": 0.8
+    },
+    {
+      "task_id": "6c2c621_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6c2c621_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00031",
+        "vc-00073"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00031",
+        "vc-00073"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6c2c621_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00073"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "vc-00073"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "6c2c621_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6c2c621_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00001",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6c2c621_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "psw-00002",
+        "psw-00007"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6c2c621_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "6c2c621_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "6c2c621_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00073"
+      ],
+      "judge_ids": [
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00073"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6c2c621_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "6c2c621_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5714285714285714
+    },
+    {
+      "task_id": "6c2c621_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "396c5a2_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "396c5a2_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "396c5a2_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "396c5a2_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "396c5a2_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "cms-00010",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.625
+    },
+    {
+      "task_id": "396c5a2_1",
+      "step_idx": 5,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "396c5a2_1",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00116",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "api-00116",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "396c5a2_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "api-00004",
+        "api-00116",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.14285714285714285
+    },
+    {
+      "task_id": "396c5a2_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "api-00116",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00116",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.8
+    },
+    {
+      "task_id": "396c5a2_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00006"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "396c5a2_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "396c5a2_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00116",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.25
+    },
+    {
+      "task_id": "396c5a2_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "api-00116",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00115",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "396c5a2_2",
+      "step_idx": 6,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "396c5a2_2",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00004",
+        "api-00116",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "396c5a2_2",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00004",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.16666666666666666
+    },
+    {
+      "task_id": "396c5a2_2",
+      "step_idx": 9,
+      "citation_ids": [
+        "api-00004",
+        "cms-00010",
+        "psw-00007",
+        "shr-00005",
+        "shr-00013",
+        "vc-00031",
+        "vc-00108"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "cms-00010",
+        "psw-00007",
+        "shr-00005",
+        "shr-00013",
+        "vc-00031",
+        "vc-00108"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "396c5a2_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "396c5a2_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "396c5a2_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "cms-00010",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.1111111111111111
+    },
+    {
+      "task_id": "396c5a2_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "396c5a2_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00115",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "judge_ids": [
+        "psw-00007",
+        "shr-00005",
+        "shr-00115",
+        "vc-00014",
+        "vc-00016"
+      ],
+      "agreement_jaccard": 0.625
+    },
+    {
+      "task_id": "396c5a2_3",
+      "step_idx": 5,
+      "citation_ids": [
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    },
+    {
+      "task_id": "396c5a2_3",
+      "step_idx": 6,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "396c5a2_3",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.6
+    },
+    {
+      "task_id": "4fab96f_1",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "4fab96f_1",
+      "step_idx": 1,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00045",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00025",
+        "vc-00027",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00045",
+        "shr-00005",
+        "vc-00014",
+        "vc-00025",
+        "vc-00027",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.8
+    },
+    {
+      "task_id": "4fab96f_1",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "4fab96f_1",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00020",
+        "api-00045",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00014",
+        "vc-00025"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "api-00045",
+        "misc-00008",
+        "shr-00005",
+        "shr-00048",
+        "vc-00014",
+        "vc-00025"
+      ],
+      "agreement_jaccard": 0.875
+    },
+    {
+      "task_id": "4fab96f_1",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00020",
+        "api-00045",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00016",
+        "vc-00025"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "api-00045",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00016",
+        "vc-00025"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "4fab96f_1",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00045",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00025"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00045",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "4fab96f_1",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00110",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00016",
+        "vc-00027",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "api-00110",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00014",
+        "vc-00016",
+        "vc-00027",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.9
+    },
+    {
+      "task_id": "4fab96f_1",
+      "step_idx": 7,
+      "citation_ids": [
+        "api-00020",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "4fab96f_1",
+      "step_idx": 8,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00025",
+        "vc-00027"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00014",
+        "vc-00025"
+      ],
+      "agreement_jaccard": 0.7777777777777778
+    },
+    {
+      "task_id": "4fab96f_1",
+      "step_idx": 9,
+      "citation_ids": [
+        "api-00110",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00025"
+      ],
+      "judge_ids": [
+        "shr-00048",
+        "vc-00025"
+      ],
+      "agreement_jaccard": 0.4
+    },
+    {
+      "task_id": "4fab96f_2",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006"
+      ],
+      "judge_ids": [],
+      "agreement_jaccard": 0.0
+    },
+    {
+      "task_id": "4fab96f_2",
+      "step_idx": 1,
+      "citation_ids": [
+        "shr-00005",
+        "shr-00006",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "4fab96f_2",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00041",
+        "shr-00111",
+        "vc-00025",
+        "vc-00027",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "api-00020",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00041",
+        "shr-00111",
+        "vc-00025",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.9
+    },
+    {
+      "task_id": "4fab96f_2",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00045",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00041",
+        "shr-00111",
+        "vc-00014",
+        "vc-00016",
+        "vc-00025"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "api-00045",
+        "shr-00005",
+        "shr-00041",
+        "shr-00111",
+        "vc-00016",
+        "vc-00025"
+      ],
+      "agreement_jaccard": 0.6363636363636364
+    },
+    {
+      "task_id": "4fab96f_2",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "psw-00007",
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "4fab96f_2",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00020",
+        "psw-00007",
+        "shr-00005",
+        "shr-00041",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "psw-00007",
+        "shr-00041",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.8
+    },
+    {
+      "task_id": "4fab96f_3",
+      "step_idx": 0,
+      "citation_ids": [
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 1.0
+    },
+    {
+      "task_id": "4fab96f_3",
+      "step_idx": 1,
+      "citation_ids": [
+        "psw-00007",
+        "shr-00005"
+      ],
+      "judge_ids": [
+        "shr-00005"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "4fab96f_3",
+      "step_idx": 2,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "misc-00008",
+        "psw-00002",
+        "psw-00007",
+        "shr-00005",
+        "shr-00048",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "psw-00002",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "4fab96f_3",
+      "step_idx": 3,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00041",
+        "vc-00014",
+        "vc-00047"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "shr-00041",
+        "vc-00014",
+        "vc-00047"
+      ],
+      "agreement_jaccard": 0.7777777777777778
+    },
+    {
+      "task_id": "4fab96f_3",
+      "step_idx": 4,
+      "citation_ids": [
+        "api-00004",
+        "shr-00005",
+        "vc-00014"
+      ],
+      "judge_ids": [
+        "api-00004",
+        "vc-00014"
+      ],
+      "agreement_jaccard": 0.6666666666666666
+    },
+    {
+      "task_id": "4fab96f_3",
+      "step_idx": 5,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "api-00045",
+        "psw-00007",
+        "shr-00005",
+        "shr-00006",
+        "vc-00025",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "shr-00005",
+        "vc-00025",
+        "vc-00031"
+      ],
+      "agreement_jaccard": 0.5
+    },
+    {
+      "task_id": "4fab96f_3",
+      "step_idx": 6,
+      "citation_ids": [
+        "api-00004",
+        "api-00020",
+        "misc-00008",
+        "psw-00007",
+        "shr-00005",
+        "vc-00031"
+      ],
+      "judge_ids": [
+        "api-00020",
+        "psw-00007"
+      ],
+      "agreement_jaccard": 0.3333333333333333
+    }
+  ],
+  "global": {
+    "steps_evaluated": 459,
+    "jaccard_mean": 0.6490768248938186,
+    "global_jaccard": 0.6239878542510121
+  }
+}

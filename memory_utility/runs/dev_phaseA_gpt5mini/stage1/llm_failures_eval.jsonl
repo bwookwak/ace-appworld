@@ -1,0 +1,1 @@
+{"timestamp": "2023-05-18T12:00:00", "model": "gpt-5-mini", "provider": "openai", "error_type": "BadRequestError", "error_msg": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'stop' is not supported with this model.\", 'type': 'invalid_request_error', 'param': 'stop', 'code': 'unsupported_parameter'}}", "attempts": 1}

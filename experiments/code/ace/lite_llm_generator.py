@@ -108,6 +108,25 @@ def _build_client(provider: str):
             timeout=_HTTP_TIMEOUT,
             max_retries=_SDK_MAX_RETRIES,
         )
+    if p == "gemini":
+        # Google AI Studio exposes an OpenAI-compatible endpoint for Gemini /
+        # Gemma models. Point an OpenAI client at it and authenticate with
+        # GEMINI_API_KEY (common Google AI Studio key).
+        api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+        if not api_key:
+            raise ValueError(
+                "GEMINI_API_KEY (or GOOGLE_API_KEY) environment variable is required for provider=gemini."
+            )
+        base_url = os.environ.get(
+            "GEMINI_BASE_URL",
+            "https://generativelanguage.googleapis.com/v1beta/openai/",
+        )
+        return OpenAI(
+            api_key=api_key,
+            base_url=base_url,
+            timeout=_HTTP_TIMEOUT,
+            max_retries=_SDK_MAX_RETRIES,
+        )
     raise ValueError(f"Invalid provider: {provider}.")
 
 
@@ -419,6 +438,12 @@ class LiteLLMGenerator:
         invalid_keys = set(generation_kwargs.keys()) - valid_generation_kwargs_keys
         if "max_tokens" not in generation_kwargs and self.max_output_tokens:
             generation_kwargs["max_tokens"] = self.max_output_tokens
+        # Drop None-valued params so the OpenAI SDK doesn't forward them as
+        # "unsupported parameter" errors. Some models (e.g. OpenAI GPT-5 family)
+        # reject legacy params like `stop`, `seed`, `logprobs`, `response_format`,
+        # penalties, etc. Stage jsonnet overrides them with null so they are
+        # merged away here.
+        generation_kwargs = {k: v for k, v in generation_kwargs.items() if v is not None}
         generation_kwargs["completion_method"] = completion_method
         generation_kwargs["provider"] = provider
         self.generation_kwargs = generation_kwargs

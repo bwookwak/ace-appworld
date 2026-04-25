@@ -1,0 +1,2264 @@
+{
+  "per_insight": {
+    "shr-00001": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 15,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00005": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 19,
+      "reference_count_total": 137,
+      "reference_count_by_task": {
+        "50e1ac9_1": 7,
+        "50e1ac9_2": 6,
+        "50e1ac9_3": 9,
+        "fac291d_1": 7,
+        "fac291d_2": 9,
+        "fac291d_3": 7,
+        "530b157_1": 9,
+        "530b157_2": 10,
+        "530b157_3": 9,
+        "4ec8de5_1": 6,
+        "4ec8de5_2": 5,
+        "4ec8de5_3": 7,
+        "b119b1f_1": 6,
+        "b119b1f_2": 5,
+        "b119b1f_3": 4,
+        "d4e9306_1": 7,
+        "d4e9306_2": 6,
+        "d4e9306_3": 5,
+        "0d8a4ee_1": 6,
+        "0d8a4ee_2": 7
+      },
+      "reference_tasks": [
+        "0d8a4ee_1",
+        "0d8a4ee_2",
+        "4ec8de5_1",
+        "4ec8de5_2",
+        "4ec8de5_3",
+        "50e1ac9_1",
+        "50e1ac9_2",
+        "50e1ac9_3",
+        "530b157_1",
+        "530b157_2",
+        "530b157_3",
+        "b119b1f_1",
+        "b119b1f_2",
+        "b119b1f_3",
+        "d4e9306_1",
+        "d4e9306_2",
+        "d4e9306_3",
+        "fac291d_1",
+        "fac291d_2",
+        "fac291d_3"
+      ],
+      "lift_per_task": {
+        "0d8a4ee_1": 0,
+        "0d8a4ee_2": 0,
+        "4ec8de5_1": 0,
+        "4ec8de5_2": 0,
+        "4ec8de5_3": 0,
+        "50e1ac9_1": 0,
+        "50e1ac9_2": 0,
+        "50e1ac9_3": 0,
+        "530b157_1": 0,
+        "530b157_2": 0,
+        "530b157_3": 0,
+        "b119b1f_1": 0,
+        "b119b1f_2": 0,
+        "b119b1f_3": 0,
+        "d4e9306_1": 0,
+        "d4e9306_2": 0,
+        "d4e9306_3": 0,
+        "fac291d_1": 0,
+        "fac291d_2": 0,
+        "fac291d_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00006": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 27,
+      "reference_count_total": 29,
+      "reference_count_by_task": {
+        "50e1ac9_1": 3,
+        "fac291d_1": 2,
+        "fac291d_2": 2,
+        "530b157_1": 5,
+        "530b157_2": 1,
+        "530b157_3": 1,
+        "4ec8de5_2": 2,
+        "4ec8de5_3": 3,
+        "b119b1f_1": 5,
+        "d4e9306_1": 2,
+        "0d8a4ee_2": 3
+      },
+      "reference_tasks": [
+        "0d8a4ee_2",
+        "4ec8de5_2",
+        "4ec8de5_3",
+        "50e1ac9_1",
+        "530b157_1",
+        "530b157_2",
+        "530b157_3",
+        "b119b1f_1",
+        "d4e9306_1",
+        "fac291d_1",
+        "fac291d_2"
+      ],
+      "lift_per_task": {
+        "0d8a4ee_2": 0,
+        "4ec8de5_2": 0,
+        "4ec8de5_3": 0,
+        "50e1ac9_1": 0,
+        "530b157_1": 0,
+        "530b157_2": 0,
+        "530b157_3": 0,
+        "b119b1f_1": 0,
+        "d4e9306_1": 0,
+        "fac291d_1": 0,
+        "fac291d_2": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00012": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 33,
+      "reference_count_total": 13,
+      "reference_count_by_task": {
+        "530b157_1": 1,
+        "530b157_2": 3,
+        "530b157_3": 4,
+        "0d8a4ee_1": 3,
+        "0d8a4ee_2": 2
+      },
+      "reference_tasks": [
+        "0d8a4ee_1",
+        "0d8a4ee_2",
+        "530b157_1",
+        "530b157_2",
+        "530b157_3"
+      ],
+      "lift_per_task": {
+        "0d8a4ee_1": 0,
+        "0d8a4ee_2": 0,
+        "530b157_1": 0,
+        "530b157_2": 0,
+        "530b157_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00013": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 55,
+      "reference_count_total": 17,
+      "reference_count_by_task": {
+        "50e1ac9_1": 1,
+        "50e1ac9_2": 1,
+        "50e1ac9_3": 2,
+        "fac291d_1": 2,
+        "fac291d_2": 1,
+        "fac291d_3": 7,
+        "4ec8de5_1": 1,
+        "4ec8de5_2": 1,
+        "4ec8de5_3": 1
+      },
+      "reference_tasks": [
+        "4ec8de5_1",
+        "4ec8de5_2",
+        "4ec8de5_3",
+        "50e1ac9_1",
+        "50e1ac9_2",
+        "50e1ac9_3",
+        "fac291d_1",
+        "fac291d_2",
+        "fac291d_3"
+      ],
+      "lift_per_task": {
+        "4ec8de5_1": 0,
+        "4ec8de5_2": 0,
+        "4ec8de5_3": 0,
+        "50e1ac9_1": 0,
+        "50e1ac9_2": 0,
+        "50e1ac9_3": 0,
+        "fac291d_1": 0,
+        "fac291d_2": 0,
+        "fac291d_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00015": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 92,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00017": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 100,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00019": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 47,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00022": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 73,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00029": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 68,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00035": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 62,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00041": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 97,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00043": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 58,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00048": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 111,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00049": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 92,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00050": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 64,
+      "reference_count_total": 4,
+      "reference_count_by_task": {
+        "50e1ac9_1": 1,
+        "50e1ac9_2": 2,
+        "50e1ac9_3": 1
+      },
+      "reference_tasks": [
+        "50e1ac9_1",
+        "50e1ac9_2",
+        "50e1ac9_3"
+      ],
+      "lift_per_task": {
+        "50e1ac9_1": 0,
+        "50e1ac9_2": 0,
+        "50e1ac9_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00052": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 66,
+      "reference_count_total": 13,
+      "reference_count_by_task": {
+        "50e1ac9_1": 3,
+        "50e1ac9_2": 3,
+        "50e1ac9_3": 7
+      },
+      "reference_tasks": [
+        "50e1ac9_1",
+        "50e1ac9_2",
+        "50e1ac9_3"
+      ],
+      "lift_per_task": {
+        "50e1ac9_1": 0,
+        "50e1ac9_2": 0,
+        "50e1ac9_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00053": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 63,
+      "reference_count_total": 2,
+      "reference_count_by_task": {
+        "4ec8de5_2": 1,
+        "4ec8de5_3": 1
+      },
+      "reference_tasks": [
+        "4ec8de5_2",
+        "4ec8de5_3"
+      ],
+      "lift_per_task": {
+        "4ec8de5_2": 0,
+        "4ec8de5_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00058": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 75,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00060": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 122,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00061": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 105,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00062": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 135,
+      "reference_count_total": 2,
+      "reference_count_by_task": {
+        "50e1ac9_3": 1,
+        "4ec8de5_3": 1
+      },
+      "reference_tasks": [
+        "4ec8de5_3",
+        "50e1ac9_3"
+      ],
+      "lift_per_task": {
+        "4ec8de5_3": 0,
+        "50e1ac9_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00065": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 81,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00067": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 145,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00068": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 73,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00071": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 61,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00072": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 155,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00074": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 102,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00076": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 100,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00078": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 127,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00081": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 89,
+      "reference_count_total": 3,
+      "reference_count_by_task": {
+        "50e1ac9_1": 3
+      },
+      "reference_tasks": [
+        "50e1ac9_1"
+      ],
+      "lift_per_task": {
+        "50e1ac9_1": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00082": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 99,
+      "reference_count_total": 3,
+      "reference_count_by_task": {
+        "b119b1f_2": 3
+      },
+      "reference_tasks": [
+        "b119b1f_2"
+      ],
+      "lift_per_task": {
+        "b119b1f_2": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00085": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 113,
+      "reference_count_total": 1,
+      "reference_count_by_task": {
+        "530b157_3": 1
+      },
+      "reference_tasks": [
+        "530b157_3"
+      ],
+      "lift_per_task": {
+        "530b157_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00087": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 110,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00090": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 66,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00093": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 88,
+      "reference_count_total": 2,
+      "reference_count_by_task": {
+        "530b157_3": 2
+      },
+      "reference_tasks": [
+        "530b157_3"
+      ],
+      "lift_per_task": {
+        "530b157_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00095": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 87,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00097": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 115,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00098": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 76,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00100": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 105,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00102": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 79,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00106": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 105,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00107": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 88,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00109": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 95,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00111": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 123,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00112": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 128,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00114": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 156,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00115": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 67,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00117": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 107,
+      "reference_count_total": 26,
+      "reference_count_by_task": {
+        "d4e9306_1": 7,
+        "d4e9306_2": 9,
+        "d4e9306_3": 10
+      },
+      "reference_tasks": [
+        "d4e9306_1",
+        "d4e9306_2",
+        "d4e9306_3"
+      ],
+      "lift_per_task": {
+        "d4e9306_1": 0,
+        "d4e9306_2": 0,
+        "d4e9306_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00120": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 105,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00122": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 106,
+      "reference_count_total": 5,
+      "reference_count_by_task": {
+        "50e1ac9_1": 2,
+        "50e1ac9_2": 3
+      },
+      "reference_tasks": [
+        "50e1ac9_1",
+        "50e1ac9_2"
+      ],
+      "lift_per_task": {
+        "50e1ac9_1": 0,
+        "50e1ac9_2": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00124": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 102,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00125": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 113,
+      "reference_count_total": 5,
+      "reference_count_by_task": {
+        "50e1ac9_1": 1,
+        "50e1ac9_2": 1,
+        "fac291d_1": 1,
+        "d4e9306_2": 2
+      },
+      "reference_tasks": [
+        "50e1ac9_1",
+        "50e1ac9_2",
+        "d4e9306_2",
+        "fac291d_1"
+      ],
+      "lift_per_task": {
+        "50e1ac9_1": 0,
+        "50e1ac9_2": 0,
+        "d4e9306_2": 0,
+        "fac291d_1": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "shr-00128": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 66,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "shr-00130": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "STRATEGIES AND HARD RULES",
+      "token_length": 166,
+      "reference_count_total": 7,
+      "reference_count_by_task": {
+        "50e1ac9_2": 5,
+        "50e1ac9_3": 1,
+        "fac291d_2": 1
+      },
+      "reference_tasks": [
+        "50e1ac9_2",
+        "50e1ac9_3",
+        "fac291d_2"
+      ],
+      "lift_per_task": {
+        "50e1ac9_2": 0,
+        "50e1ac9_3": 0,
+        "fac291d_2": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "api-00004": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 30,
+      "reference_count_total": 29,
+      "reference_count_by_task": {
+        "50e1ac9_1": 1,
+        "fac291d_3": 1,
+        "530b157_1": 5,
+        "530b157_2": 2,
+        "530b157_3": 3,
+        "4ec8de5_1": 1,
+        "4ec8de5_2": 2,
+        "b119b1f_2": 1,
+        "b119b1f_3": 1,
+        "d4e9306_1": 1,
+        "d4e9306_2": 2,
+        "0d8a4ee_1": 3,
+        "0d8a4ee_2": 6
+      },
+      "reference_tasks": [
+        "0d8a4ee_1",
+        "0d8a4ee_2",
+        "4ec8de5_1",
+        "4ec8de5_2",
+        "50e1ac9_1",
+        "530b157_1",
+        "530b157_2",
+        "530b157_3",
+        "b119b1f_2",
+        "b119b1f_3",
+        "d4e9306_1",
+        "d4e9306_2",
+        "fac291d_3"
+      ],
+      "lift_per_task": {
+        "0d8a4ee_1": 0,
+        "0d8a4ee_2": 0,
+        "4ec8de5_1": 0,
+        "4ec8de5_2": 0,
+        "50e1ac9_1": 0,
+        "530b157_1": 0,
+        "530b157_2": 0,
+        "530b157_3": 0,
+        "b119b1f_2": 0,
+        "b119b1f_3": 0,
+        "d4e9306_1": 0,
+        "d4e9306_2": 0,
+        "fac291d_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "api-00011": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 48,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00018": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 49,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00020": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 43,
+      "reference_count_total": 4,
+      "reference_count_by_task": {
+        "0d8a4ee_2": 4
+      },
+      "reference_tasks": [
+        "0d8a4ee_2"
+      ],
+      "lift_per_task": {
+        "0d8a4ee_2": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "api-00026": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 51,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00030": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 43,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00032": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 66,
+      "reference_count_total": 1,
+      "reference_count_by_task": {
+        "d4e9306_3": 1
+      },
+      "reference_tasks": [
+        "d4e9306_3"
+      ],
+      "lift_per_task": {
+        "d4e9306_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "api-00036": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 50,
+      "reference_count_total": 11,
+      "reference_count_by_task": {
+        "4ec8de5_2": 4,
+        "4ec8de5_3": 7
+      },
+      "reference_tasks": [
+        "4ec8de5_2",
+        "4ec8de5_3"
+      ],
+      "lift_per_task": {
+        "4ec8de5_2": 0,
+        "4ec8de5_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "api-00038": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 57,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00044": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 58,
+      "reference_count_total": 2,
+      "reference_count_by_task": {
+        "0d8a4ee_2": 2
+      },
+      "reference_tasks": [
+        "0d8a4ee_2"
+      ],
+      "lift_per_task": {
+        "0d8a4ee_2": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "api-00045": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 50,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00054": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 70,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00056": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 96,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00063": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 65,
+      "reference_count_total": 1,
+      "reference_count_by_task": {
+        "4ec8de5_3": 1
+      },
+      "reference_tasks": [
+        "4ec8de5_3"
+      ],
+      "lift_per_task": {
+        "4ec8de5_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "api-00070": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 58,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00075": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 110,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00077": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 64,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00079": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 76,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00083": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 63,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00088": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 72,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00091": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 51,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00103": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 59,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00104": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 44,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00110": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 86,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00116": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 56,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00118": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 82,
+      "reference_count_total": 1,
+      "reference_count_by_task": {
+        "d4e9306_3": 1
+      },
+      "reference_tasks": [
+        "d4e9306_3"
+      ],
+      "lift_per_task": {
+        "d4e9306_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "api-00123": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 95,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00126": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 61,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "api-00127": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "APIs TO USE FOR SPECIFIC INFORMATION",
+      "token_length": 111,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "code-00021": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "USEFUL CODE SNIPPETS AND TEMPLATES",
+      "token_length": 81,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "cms-00009": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 50,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "cms-00010": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 39,
+      "reference_count_total": 8,
+      "reference_count_by_task": {
+        "fac291d_1": 2,
+        "fac291d_2": 2,
+        "fac291d_3": 1,
+        "4ec8de5_3": 1,
+        "d4e9306_1": 2
+      },
+      "reference_tasks": [
+        "4ec8de5_3",
+        "d4e9306_1",
+        "fac291d_1",
+        "fac291d_2",
+        "fac291d_3"
+      ],
+      "lift_per_task": {
+        "4ec8de5_3": 0,
+        "d4e9306_1": 0,
+        "fac291d_1": 0,
+        "fac291d_2": 0,
+        "fac291d_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "cms-00028": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 56,
+      "reference_count_total": 2,
+      "reference_count_by_task": {
+        "50e1ac9_1": 1,
+        "4ec8de5_1": 1
+      },
+      "reference_tasks": [
+        "4ec8de5_1",
+        "50e1ac9_1"
+      ],
+      "lift_per_task": {
+        "4ec8de5_1": 0,
+        "50e1ac9_1": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "cms-00033": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 52,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "cms-00042": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 56,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "cms-00066": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 58,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "cms-00089": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 64,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "cms-00113": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "COMMON MISTAKES AND CORRECT STRATEGIES",
+      "token_length": 56,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "psw-00002": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "PROBLEM-SOLVING HEURISTICS AND WORKFLOWS",
+      "token_length": 14,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "psw-00007": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "PROBLEM-SOLVING HEURISTICS AND WORKFLOWS",
+      "token_length": 23,
+      "reference_count_total": 41,
+      "reference_count_by_task": {
+        "50e1ac9_1": 4,
+        "50e1ac9_2": 3,
+        "fac291d_1": 3,
+        "fac291d_2": 3,
+        "4ec8de5_1": 1,
+        "4ec8de5_2": 2,
+        "4ec8de5_3": 6,
+        "d4e9306_1": 5,
+        "d4e9306_2": 9,
+        "d4e9306_3": 4,
+        "0d8a4ee_2": 1
+      },
+      "reference_tasks": [
+        "0d8a4ee_2",
+        "4ec8de5_1",
+        "4ec8de5_2",
+        "4ec8de5_3",
+        "50e1ac9_1",
+        "50e1ac9_2",
+        "d4e9306_1",
+        "d4e9306_2",
+        "d4e9306_3",
+        "fac291d_1",
+        "fac291d_2"
+      ],
+      "lift_per_task": {
+        "0d8a4ee_2": 0,
+        "4ec8de5_1": 0,
+        "4ec8de5_2": 0,
+        "4ec8de5_3": 0,
+        "50e1ac9_1": 0,
+        "50e1ac9_2": 0,
+        "d4e9306_1": 0,
+        "d4e9306_2": 0,
+        "d4e9306_3": 0,
+        "fac291d_1": 0,
+        "fac291d_2": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "vc-00014": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 39,
+      "reference_count_total": 2,
+      "reference_count_by_task": {
+        "530b157_1": 2
+      },
+      "reference_tasks": [
+        "530b157_1"
+      ],
+      "lift_per_task": {
+        "530b157_1": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "vc-00016": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 60,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00025": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 85,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00027": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 55,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00031": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 56,
+      "reference_count_total": 1,
+      "reference_count_by_task": {
+        "d4e9306_1": 1
+      },
+      "reference_tasks": [
+        "d4e9306_1"
+      ],
+      "lift_per_task": {
+        "d4e9306_1": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "vc-00034": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 50,
+      "reference_count_total": 3,
+      "reference_count_by_task": {
+        "fac291d_3": 1,
+        "4ec8de5_2": 1,
+        "4ec8de5_3": 1
+      },
+      "reference_tasks": [
+        "4ec8de5_2",
+        "4ec8de5_3",
+        "fac291d_3"
+      ],
+      "lift_per_task": {
+        "4ec8de5_2": 0,
+        "4ec8de5_3": 0,
+        "fac291d_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "vc-00037": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 49,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00039": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 68,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00040": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 65,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00046": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 72,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00047": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 81,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00051": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 52,
+      "reference_count_total": 10,
+      "reference_count_by_task": {
+        "d4e9306_1": 2,
+        "d4e9306_2": 3,
+        "d4e9306_3": 5
+      },
+      "reference_tasks": [
+        "d4e9306_1",
+        "d4e9306_2",
+        "d4e9306_3"
+      ],
+      "lift_per_task": {
+        "d4e9306_1": 0,
+        "d4e9306_2": 0,
+        "d4e9306_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "vc-00055": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 66,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00057": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 95,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00059": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 63,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00064": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 61,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00069": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 58,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00073": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 73,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00080": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 55,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00084": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 79,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00086": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 48,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00092": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 101,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00094": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 52,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00096": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 62,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00099": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 61,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00101": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 66,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00105": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 66,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00108": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 52,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "vc-00119": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 76,
+      "reference_count_total": 1,
+      "reference_count_by_task": {
+        "d4e9306_1": 1
+      },
+      "reference_tasks": [
+        "d4e9306_1"
+      ],
+      "lift_per_task": {
+        "d4e9306_1": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "vc-00121": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 63,
+      "reference_count_total": 1,
+      "reference_count_by_task": {
+        "50e1ac9_1": 1
+      },
+      "reference_tasks": [
+        "50e1ac9_1"
+      ],
+      "lift_per_task": {
+        "50e1ac9_1": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "vc-00129": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "VERIFICATION CHECKLIST",
+      "token_length": 55,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "ts-00023": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "TROUBLESHOOTING AND PITFALLS",
+      "token_length": 75,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "ts-00024": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "TROUBLESHOOTING AND PITFALLS",
+      "token_length": 50,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "misc-00003": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "OTHERS",
+      "token_length": 26,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "misc-00008": {
+      "source": "provided",
+      "domain": "appworld",
+      "section": "OTHERS",
+      "token_length": 75,
+      "reference_count_total": 35,
+      "reference_count_by_task": {
+        "50e1ac9_1": 1,
+        "50e1ac9_2": 1,
+        "fac291d_1": 2,
+        "fac291d_2": 3,
+        "fac291d_3": 2,
+        "530b157_1": 2,
+        "530b157_3": 1,
+        "4ec8de5_1": 2,
+        "4ec8de5_2": 4,
+        "4ec8de5_3": 1,
+        "b119b1f_1": 1,
+        "b119b1f_2": 1,
+        "b119b1f_3": 1,
+        "d4e9306_1": 1,
+        "d4e9306_2": 4,
+        "d4e9306_3": 4,
+        "0d8a4ee_2": 4
+      },
+      "reference_tasks": [
+        "0d8a4ee_2",
+        "4ec8de5_1",
+        "4ec8de5_2",
+        "4ec8de5_3",
+        "50e1ac9_1",
+        "50e1ac9_2",
+        "530b157_1",
+        "530b157_3",
+        "b119b1f_1",
+        "b119b1f_2",
+        "b119b1f_3",
+        "d4e9306_1",
+        "d4e9306_2",
+        "d4e9306_3",
+        "fac291d_1",
+        "fac291d_2",
+        "fac291d_3"
+      ],
+      "lift_per_task": {
+        "0d8a4ee_2": 0,
+        "4ec8de5_1": 0,
+        "4ec8de5_2": 0,
+        "4ec8de5_3": 0,
+        "50e1ac9_1": 0,
+        "50e1ac9_2": 0,
+        "530b157_1": 0,
+        "530b157_3": 0,
+        "b119b1f_1": 0,
+        "b119b1f_2": 0,
+        "b119b1f_3": 0,
+        "d4e9306_1": 0,
+        "d4e9306_2": 0,
+        "d4e9306_3": 0,
+        "fac291d_1": 0,
+        "fac291d_2": 0,
+        "fac291d_3": 0
+      },
+      "lift_mean": 0.0,
+      "lift_variance": 0,
+      "has_positive_spike": false
+    },
+    "dummy-00001": {
+      "source": "dummy",
+      "domain": "cooking",
+      "section": "DUMMY_INSIGHTS",
+      "token_length": 35,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "dummy-00002": {
+      "source": "dummy",
+      "domain": "sports_coaching",
+      "section": "DUMMY_INSIGHTS",
+      "token_length": 40,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    },
+    "dummy-00003": {
+      "source": "dummy",
+      "domain": "personal_finance",
+      "section": "DUMMY_INSIGHTS",
+      "token_length": 35,
+      "reference_count_total": 0,
+      "reference_count_by_task": {},
+      "reference_tasks": [],
+      "lift_per_task": {},
+      "lift_mean": 0.0,
+      "lift_variance": 0.0,
+      "has_positive_spike": false
+    }
+  },
+  "global": {
+    "reference_source_used": "intersection",
+    "min_references_per_task": 1,
+    "n_tasks_common": 20,
+    "n_insights": 133,
+    "n_dummies": 3,
+    "baseline_success": 16,
+    "fullmem_success": 16,
+    "lift_distribution_summary": {
+      "mean": 0.0,
+      "std": 0.0,
+      "p25": 0,
+      "p75": 0
+    }
+  },
+  "config": {
+    "baseline_path": "/home/bwoo/workspace/ace-appworld/memory_utility/runs/test_run_parallel/stage1/baseline_results.json",
+    "stage2_dir": "/home/bwoo/workspace/ace-appworld/memory_utility/runs/test_run_parallel/stage2",
+    "memory_path": "/home/bwoo/workspace/ace-appworld/memory_utility/runs/test_run_parallel/memory.json",
+    "reference_source": "intersection",
+    "min_references_per_task": 1
+  },
+  "config_hash": "ff75a3e6c1cdfce75e3cdb525ae4782413950d4f2d68b49b4eb158174a9a4687",
+  "created_at": "2026-04-24T11:12:57.347488Z"
+}
